@@ -1,0 +1,58 @@
+.main{
+    position: absolute;
+    left: 150px;
+    margin: 5px;
+    padding: 15px;
+    width: 80%;
+    height: 900px;
+    display: flex;  
+    background-color: rgb(133, 231, 191);
+}
+.skills{
+    margin-right: 1%;
+    width: 48%;
+    height: 890px;
+    background-color: rgb(75, 115, 226);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left:40px;
+    align-items: center;
+}
+.info{
+    margin-left: 1%;
+    width: 48%;
+    height: 890px;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left:40px;
+    
+}
+#Lname{
+    margin-left:90px ;
+    font-size: 30px;
+    color: wheat;
+}
+#Fname{
+    margin-left:90px ;
+    font-size: 30px;
+    color: wheat;
+}
+#adress{
+    
+    color: red;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+#fone{
+    text-align: center;
+    width: 90%;
+    background-color: rgb(75, 115, 226);
+    color: white;
+}
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/HT_2/css/style.css">
+</head>
+
+<body>
+
+    <header id="beginning">
+        <h1>HTML5 Семантичні елементи</h1>
+        <article>
+            <p> Семантичний елемент чітко описує його значення як для браузера, так і
+                для розробника.</p>
+            <p> Приклади не <strong>семантичних</strong> елементів: &ltdiv&gt і &ltspan&gt- нічого не говорить
+                про його вміст.</p>
+            <p> Приклади <strong>семантичних</strong> елементів: &ltform&gt, &lttable&gt і &ltarticle&gt- чітко
+                визначає його зміст.</p>
+        </article>
+        <h2>Підтримка браузерів </h2>
+        <img src="/HT_2/img/icons.jpg" alt="icons" width="400" id="icons">
+        <article>
+            <p> Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+            <P> Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі
+                елементи".</P>
+            <p> Прочитайте про це в <a
+                    href="https://accounts.google.com/ServiceLogin/webreauth?service=blogger&passive=1209600&continue=https%3A%2F%2Fwww.blogger.com%2Fblog%2Fpage%2Fedit%2F2590532390801722394%2F850003172824707311&followup=https%3A%2F%2Fwww.blogger.com%2Fblog%2Fpage%2Fedit%2F2590532390801722394%2F850003172824707311&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                    target="_blank">підтримці браузера HTML5</a>. </p>
+        </article>
+    </header>
+    <nav>
+        <h2>Нові семантичні елементи в HTML5</h2>
+        <ul>
+            <li>
+                <a href="#beginning"> Start </a>
+            </li>
+            <li>
+                <a href="#section"> &ltsection&gt</a>
+            </li>
+            <li>
+                <a href="#article"> &ltarticle&gt</a>
+            </li>
+            <li>
+                <a href="#header"> &ltheader&gt</a>
+            </li>
+            <li>
+                <a href="#footer">&ltfooter&gt</a>
+            </li>
+            <li>
+                <a href="#iframe"> &ltiframe&gt</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+        <section>
+            <h2 id="section">
+                HTML5 &ltsection&gt елемент
+            </h2>
+            <article>
+                <p> Елемент &ltsection&gt визначає розділ в документі.</p>
+                <p> Згідно з документацією <a href=https://www.w3schools.com/html/html5_semantic_elements.asp
+                        target="_blank">w3school HTML5:</a> "розділ представляє собою
+                    тематичну угруповання контенту, зазвичай з заголовком".</p>
+
+                <p> Домашня сторінка зазвичай може бути розділена на розділи для
+                    ознайомлення, змісту і контактної інформації.</p>
+                <img src="/HT_2/img/section.jpg" alt="section example" width="600">
+            </article>
+            <article id="article">
+                <h2>HTML5 &ltarticle&gt елемент
+                </h2>
+                <p> Елемент &ltarticle&gt визначає незалежний, автономний вміст.</p>
+                <p> Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+                    читати його незалежно від іншої частини веб-сайту.</p>
+                <p> Приклади того, де можна використовувати елемент &ltarticle&gt: </p>
+                <img src="/HT_2/img/article.jpg" alt="article example" width="600">
+            </article>
+            <article>
+                <h2 id="header">
+                    HTML5 &ltheader&gt елемент
+                </h2>
+                <p> Елемент &ltheader&gt задає заголовок для документа або розділу.</p>
+                <p> Елемент &ltheader&gt повинен використовуватися в якості контейнера для
+                    вступного змісту.</p>
+                <p> В одному документі може бути кілька елементів &ltheader&gt.
+                    У наступному прикладі визначається заголовок для статті:</p>
+                <img src="/HT_2/img/header.jpg" alt="header example" width="600">
+            </article>
+            <article>
+                <h2 id="footer"> HTML5 &ltfooter&gt елемент</h2>
+                <p> Елемент &ltfooter&gt вказує нижній колонтитул для документа або розділу.</p>
+                <p> Нижній колонтитул зазвичай містить автора документа, інформацію про
+                    авторське право, посилання на умови використання, контактні дані і т.д.</p>
+                <p>В одному документі може бути кілька елементів &ltfooter&gt.</p>
+                <img src="/HT_2/img/header.jpg" alt="footer example" width="600">
+            </article>
+        </section>
+    </main>
+    <footer id="iframe">
+        <iframe src="https://sokolanton.github.io/CourseHomeTasks/" frameborder="0" width="1200" height="600"></iframe>
+        <iframe id="video" width="1200" height="600" src="https://www.youtube.com/embed/FII4DRuiLLI"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </footer>
+</body>
+
+</html>
