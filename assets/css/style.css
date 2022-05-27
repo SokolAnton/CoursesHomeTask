@@ -87,7 +87,9 @@ body {
   border-color: #BBDEFB ;
   margin-top: 250px;
   position: relative;
-  top: 300px;
+  top: 400px;
+  
+  flex-direction: column;
 }
 .MainPart{
   display: flex;
