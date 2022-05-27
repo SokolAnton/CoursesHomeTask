@@ -44,7 +44,7 @@ body {
 .card:hover .back {transform: rotateY(360deg);}
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
 body{
   display: flex;
   flex-direction: column;
