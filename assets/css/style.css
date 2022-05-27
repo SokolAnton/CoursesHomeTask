@@ -42,3 +42,11 @@ body {
 }
 .card:hover .front {transform: rotateY(180deg);}
 .card:hover .back {transform: rotateY(360deg);}
+
+
+@media screen and (max-width: 1200px) {
+body{
+  display: flex;
+  flex-direction: column;
+}
+}
