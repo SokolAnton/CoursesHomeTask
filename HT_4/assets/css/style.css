@@ -5,36 +5,35 @@
 }
 
 body {
-    margin: 0 auto;
-    width: 1445px;
-    /* border: 1px solid black; */
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+
 }
 
 .container {
-    margin-left: 14%;
-    margin-right: 14%;
+    margin: 0 auto;
+    max-width: 944px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
 
 header nav {
-    width: 940px;
-    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #828282;
-
+    width: 944px;
 }
 
 header nav li {
     display: inline-block;
     margin: 41px;
-
-
 }
 
 header nav li a {
@@ -56,6 +55,8 @@ header nav li a:hover {
 }
 
 #home {
+    display: flex;
+    justify-content: center;
     margin-bottom: 100px;
 }
 
@@ -65,7 +66,6 @@ header nav li a:hover {
 
 #about-me {
     background-color: #F6F6F6;
-    height: 517px;
     display: flex;
     justify-content: center;
 }
@@ -76,24 +76,36 @@ header nav li a:hover {
     font-size: 34px;
     line-height: 46px;
     margin-top: 100px;
+    margin-bottom: 28px;
 }
 
 #paragraph {
-    margin: 30px;
-    max-width: 480px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#paragraph_2 {
+    margin-bottom: 100px;
 }
 
 .about {
     text-align: center;
-    max-width: 480px;
+    max-width: 420px;
 }
 
 #skills {
     margin-top: 100px;
-    display: flex;
-    justify-content: center;
     text-align: center;
     margin-bottom: 100px;
+
+}
+
+.stars{
+    width: 100px;
+}
+.stars img {
+    margin-left: 0;
+    width: 15px;
 }
 
 #skills h2 {
@@ -161,49 +173,46 @@ header nav li a:hover {
     max-width: 230px;
     margin-left: 400px;
 }
-#contacts{
+#contacts {
     text-align: center;
     display: flex;
     justify-content: center;
 }
-#contacts h2{
+#contacts h2 {
     margin-top: 100px;
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 34px;
-line-height: 46px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
 }
-#contacts p{
+#contacts p {
     margin-top: 21px;
     margin-bottom: 86px;
-    max-width: 260px; 
+    max-width: 260px;
 }
-#send{
+#send {
     border: 1px solid black;
     border-radius: 10px;
     background-color: black;
+    max-width: 150px;
+    margin-left: 5g0px;
+   
+}
+#send a{
     color: white;
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 25px;
-text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
 }
-.socialNetwork{
+
+.socialNetwork {
     margin-top: 46px;
-    /* margin-bottom: 44px; */
-    
 }
-.SNtext p{
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-text-align: center;
 
-color: #828282;
-
+.SNtext p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
 }
