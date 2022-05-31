@@ -28,7 +28,9 @@ header nav {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #828282;
+    box-shadow: 5px   rgba(0, 0, 0, 0.2);
     width: 944px;
+    text-shadow: #FC0 1px 0 10px;
 }
 
 header nav li {
@@ -157,7 +159,6 @@ header nav li a:hover {
 #portfolio {
     display: flex;
     justify-content: center;
-    text-align: center;
     background-color: #F6F6F6;
 }
 
@@ -167,11 +168,12 @@ header nav li a:hover {
 
 }
 
-#portfolio p {
+#portfolio  p {
     margin-top: 15px;
     margin-bottom: 129px;
     max-width: 230px;
-    margin-left: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #contacts {
     text-align: center;
@@ -187,17 +189,19 @@ header nav li a:hover {
 #contacts p {
     margin-top: 21px;
     margin-bottom: 86px;
-    max-width: 260px;
+    max-width: 250px;
 }
 #send {
     border: 1px solid black;
     border-radius: 10px;
     background-color: black;
     max-width: 150px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
    
 }
 #send a{
+    height: 40xp;
     color: white;
     font-weight: 700;
     font-size: 18px;
