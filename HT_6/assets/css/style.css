@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Myriad Pro" sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.main{
+    padding: 115px 0 40px;
+}
+.container{
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 1170px;
+    background-color: #121116;
+    color: #d4d0d2;
+    text-align: center;
+}
+#logo{
+    margin-top: 115px;
+    margin-bottom: 55px;
+}
+.line{
+    margin-top: 25px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #d4d0d2;
+    max-width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon img{
+    margin-left: 22px;
+    height: 15px;
+    margin-bottom: 90px;
+}
+#kasper{
+    color: #19c8fa;
+}
