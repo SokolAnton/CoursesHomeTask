@@ -23,11 +23,10 @@ header {
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    border: 1px solid black;
 }
 
 nav {
-    display: flex;  
+    display: flex;
 }
 
 nav img {
@@ -80,62 +79,42 @@ nav ul li a:hover {
 .button a {
     text-decoration: none;
 }
-.leftSide{
+
+.leftSide {
     display: inline-block;
     max-width: 500px;
-    margin-right: 10px;
+    margin-right: 14px;
+    vertical-align: middle;
 }
-.rightSide{
+
+.rightSide {
     display: inline-block;
     max-width: 644px;
-}
-.leftSide h1{
-font-style: normal;
-font-weight: 700;
-font-size: 44px;
-line-height: 54px;
-margin-bottom: 30px;
-margin-top: 70px;
-}
-.leftSide p{
-    font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-margin-bottom: 20px;
-}
-.get{
-    font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-}
-/* .leftSide {
-    max-width: 500px;   
-    display: inline-block;
-}   
-.rightSide{
-    display: inline-block;
-    max-width: 644px;
+    vertical-align: middle;
 }
 
 .leftSide h1 {
-    font-size: 44px;
+    font-style: normal;
     font-weight: 700;
+    font-size: 44px;
     line-height: 54px;
-    border: 1px solid green;
-}
-.text {
-    margin-bottom: 20px;
-    text-align: left;
-    border: 1px solid blue;
+    margin-bottom: 30px;
+    margin-top: 70px;
 }
 
-.text p {
-    padding-top: 30px;
+.leftSide p {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 20px;
 }
-*/
+
+.get {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .get {
     width: 180px;
     padding: 13px 43.5px;
@@ -143,9 +122,10 @@ line-height: 24px;
     background: #FF9900;
     border-radius: 4px;
     margin-bottom: 97px;
-    
+
 }
-.get a{
+
+.get a {
     color: white;
     text-decoration: none;
-} 
+}
