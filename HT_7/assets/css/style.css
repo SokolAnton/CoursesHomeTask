@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 17px 120px;
+    margin-bottom: 70px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+}
+
+nav img {
+    width: 200px;
+    height: 32px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+nav ul li {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+}
+
+.menu {
+    margin: 6px 198px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+#in {
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding: 13px 26px;
+    margin-right: 32px;
+}
+
+#up {
+    border: 1px solid #FF9900;
+    background: #FF9900;
+    border-radius: 4px;
+    color: white;
+    padding: 13px 26px;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.firstScreen {
+    margin-top: 70px; 
+}
+.leftSide {
+    max-width: 500px;
+    margin-right: 56px;
+}   
+
+.leftSide h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0px;
+    margin-top: 97px;
+    border: 1px solid green;
+}
+
+.text {
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid blue;
+}
+
+.text p {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.get {
+    width: 180px;
+    padding: 13px 43.5px;
+    border: 1px solid #FF9900;
+    background: #FF9900;
+    border-radius: 4px;
+    
+}
+.get a{
+    color: white;
+    text-decoration: none;
+}
+.rightSide img {
+    max-width: 644px;
+   width: 100px;
+}

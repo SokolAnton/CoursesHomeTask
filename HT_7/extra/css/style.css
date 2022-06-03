@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1116px;
+    margin: 0 auto;
+
+}
+.main{
+    border: 25px solid #2B81AC;
+    background-color: #3399CC;
+    padding-top:130px;
+    padding-bottom: 120px;
+}
+.weather{
+    border:2px solid white;
+}
+.weather-type{
+    text-align: center;
+    width: 24%;
+    display: inline-block;
+}
+.middle{
+    width: 49%;
+}
+.weather-type div{
+    border: 1px solid white;
+    
+    padding-top: 26px;
+    padding-bottom: 27px;
+}
+.big{
+    width:  100%;
+}
