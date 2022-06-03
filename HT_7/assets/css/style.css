@@ -27,7 +27,7 @@ header {
 }
 
 nav {
-    display: flex;
+    display: flex;  
 }
 
 nav img {
@@ -62,6 +62,7 @@ nav ul li a:hover {
     border-radius: 4px;
     padding: 13px 26px;
     margin-right: 32px;
+    color: black;
 }
 
 #up {
@@ -79,24 +80,49 @@ nav ul li a:hover {
 .button a {
     text-decoration: none;
 }
-
-.firstScreen {
-    margin-top: 70px; 
-}
-.leftSide {
+.leftSide{
+    display: inline-block;
     max-width: 500px;
-    margin-right: 56px;
+    margin-right: 10px;
+}
+.rightSide{
+    display: inline-block;
+    max-width: 644px;
+}
+.leftSide h1{
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 54px;
+margin-bottom: 30px;
+margin-top: 70px;
+}
+.leftSide p{
+    font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+margin-bottom: 20px;
+}
+.get{
+    font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+}
+/* .leftSide {
+    max-width: 500px;   
+    display: inline-block;
 }   
+.rightSide{
+    display: inline-block;
+    max-width: 644px;
+}
 
 .leftSide h1 {
     font-size: 44px;
     font-weight: 700;
     line-height: 54px;
-    letter-spacing: 0px;
-    margin-top: 97px;
     border: 1px solid green;
 }
-
 .text {
     margin-bottom: 20px;
     text-align: left;
@@ -109,20 +135,17 @@ nav ul li a:hover {
     font-size: 18px;
     line-height: 28px;
 }
-
+*/
 .get {
     width: 180px;
     padding: 13px 43.5px;
     border: 1px solid #FF9900;
     background: #FF9900;
     border-radius: 4px;
+    margin-bottom: 97px;
     
 }
 .get a{
     color: white;
     text-decoration: none;
-}
-.rightSide img {
-    max-width: 644px;
-   width: 100px;
-}
+} 
