@@ -1,0 +1,104 @@
+*,
+::after
+::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+font-style: normal;
+}
+.container{
+    margin: 0 auto;
+    max-width: 793px;
+}
+.text-aligh{
+    text-align: center; 
+}
+.text-aligh-L{
+    text-align: left;
+}
+.name{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    color:#FF8984;
+    background-color: #4A4F56;
+}
+.name h1{
+margin-bottom: 4px;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+}
+.name p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+.first-screen{
+    background-color: #3B3F45;
+    padding-bottom: 45px;
+    padding-left:130px;
+    padding-right: 130px;
+    padding-top: 20px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.points{
+    max-width: 534px;
+   
+    color: white;
+    margin-bottom: 45px;
+}
+.points >div{
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding-left: 12px;
+}
+.points div:nth-child(2n+1) {
+    background-color: #88839E;
+}
+.points div+div+div+div{
+    background-color: #88839E;
+
+}
+.points div:nth-last-child(4n+1) {
+    background-color: #7A7593;
+}
+.points div:nth-last-child(4n+1) {
+    text-decoration: line-through;
+}
+.points span{
+    font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+.points span+span{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.bon-apetit{
+    max-width: 534px;
+    background-color: #4A4F56;
+    color:#FF8984;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+.bon-apetit::after{
+    content: ":)";
+}
+.points div:hover{
+   border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    background-color: #625E77;
+}
+#Cbox_1:checked ~ .points{
+background-color: aqua;
+}
