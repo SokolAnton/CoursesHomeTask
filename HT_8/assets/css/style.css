@@ -106,7 +106,10 @@ body {
     content: ":)";
     color: #FF8984;
 }
-
+label{
+    width: 90%;
+    display: inline-block;
+}
 .points div:hover {
     border-bottom: 3px solid white;
     border-top: 3px solid white;
