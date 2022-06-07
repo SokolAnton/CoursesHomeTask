@@ -22,12 +22,13 @@ body {
 .text-aligh-L {
     text-align: left;
 }
-
+header{
+    background-color: #4A4F56;
+}
 .name {
     padding-top: 10px;
     padding-bottom: 12px;
     color: #FF8984;
-    background-color: #4A4F56;
 }
 
 .name h1 {
@@ -42,9 +43,11 @@ body {
     font-size: 16px;
     line-height: 19px;
 }
-
-.first-screen {
+main{
     background-color: #3B3F45;
+}
+.first-screen {
+    
     padding-bottom: 45px;
     padding-left: 130px;
     padding-right: 130px;
