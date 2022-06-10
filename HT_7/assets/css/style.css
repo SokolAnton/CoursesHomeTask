@@ -11,7 +11,14 @@ body {
     font-size: 16px;
     line-height: 26px;
 }
-
+h2{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+}
 header {
     font-weight: 400;
     font-size: 16px;
@@ -129,3 +136,102 @@ nav ul li a:hover {
     color: white;
     text-decoration: none;
 }
+/* features */
+
+.features{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.features h2{
+    margin-bottom: 50px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.crd-btn{
+    background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.629261) 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px
+}
+.item{
+    max-width: 270px;
+}
+.item h3{
+    font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+margin-bottom: 13px;
+}
+
+.butn a{
+    text-decoration: none;
+}
+/* footter  */
+footer h5{
+    font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: black; 
+    margin-bottom: 15px;
+}
+footer li{
+    list-style: none;
+}
+.f-block{
+    display: flex;
+    justify-content: space-between;
+}
+.quick-links,.legal-staff{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.quick-links h5,.legal-staff h5{
+margin-bottom: 30px;
+font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+}
+.sign-up-btn{
+    max-width: 340px;
+}
+
+.input{
+    border: 0.5px solid grey;
+    opacity: 0.33;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.butn{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+background-color:#FF9900;
+padding: 10px 40px;
+max-width: 180px;
+}
+.butn a{
+    color: white;
+}
+
+
+
+/* FOOOOOOOOOONTSSSSSS */
