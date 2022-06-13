@@ -169,12 +169,17 @@ nav ul li a:hover {
 font-size: 22px;
 line-height: 27px;
 margin-bottom: 13px;
+margin-top: 30px;
 }
 
 .butn a{
     text-decoration: none;
 }
 /* footter  */
+.line{
+    border-top:1px solid #BCD0E57F;
+    margin-bottom: 70px;
+}
 footer h5{
     font-weight: 700;
 font-size: 20px;
@@ -209,15 +214,18 @@ line-height: 30px;
     max-width: 340px;
 }
 
-.input{
-    border: 0.5px solid grey;
-    opacity: 0.33;
+.sign-up-btn input{
+    border: 1px solid #BCD0E5;
     margin-top: 25px;
+    opacity: 0.5;
     margin-bottom: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10px;
-}
+    padding-right: 118px;
+    color: #BCD0E5;
+} 
+
 .butn{
     font-family: 'Poppins';
 font-style: normal;

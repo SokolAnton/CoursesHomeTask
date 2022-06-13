@@ -1,0 +1,159 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+main input{
+    border: 1px solid #E4E4E4;
+border-radius: 6px;
+}
+.container{
+    margin:  0 auto;
+    max-width: 570px;
+    
+    border: 3px dotted rgb(90, 182, 90);
+    
+}
+.block-1 h2{
+    font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+color: #1C1C1C;
+margin-bottom: 20px;
+}
+label{
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+input,
+select{
+    outline: none;
+}
+input:focus,
+select{
+    border-color: #007BFF;
+}
+.N-form{
+    display: flex;
+}
+.name{
+    width: 49%;
+
+}
+.name input{
+    margin: 7px;
+    margin-left: 0px;
+    width: 100%;
+}
+.LN{
+    margin-left: 12px;
+}
+.E-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+.E-form input{
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.E-form span{
+    font-size: 13px;
+line-height: 18px;
+letter-spacing: -0.1px;
+color: #969696;
+}
+.S-form{
+    margin-bottom: 20px;
+}
+.S-form input{
+    margin-right: 8px;
+}
+.S-form label{
+    margin-right: 21px;
+}
+.country{
+    width:49%;
+    margin-right: 10px;
+}
+.country select{
+    width: 100%;
+
+}
+.C-form{
+    display: flex;
+}
+.City{
+    width: 49%;
+}
+.City input{
+    width: 100%;
+}
+.Sub-form{
+    margin-top: 20px;
+    margin-bottom: 22px;
+    background: #007BFF;
+border: 1px solid #E4E4E4;
+border-radius: 6px;
+text-align: center;
+padding: 8px 10px;
+}
+.Sub-form button{
+    background-color:#007BFF ;
+    border:none ;
+    width: 100%;
+}
+.text{
+    max-width: 410px;
+    
+}
+.text p{
+    font-size: 13px;
+line-height: 18px;
+letter-spacing: -0.1px;
+text-align: center;
+color: #969696;
+margin-bottom: 20px;
+
+}
+.text a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #007BFF;
+}
+.line{
+    border-top: 1px solid #E4E4E4;
+    margin-bottom: 20px;
+}
+#LogIn{
+    margin-left: 20px;
+}
+#F-name:valid, 
+#L-name:valid,
+#Email:valid{
+    background-color: rgb(113, 206, 113);
+
+}
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=Inter&family=Montserrat:wght@500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500&family=Staatliches&family=Tourney:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="block-1">
+            <div class="container">
+                <h2>
+                    Create an Account
+                </h2>
+                <form action="">
+                    <div class="N-form">
+                        <div class="name">
+                            <label for=""> First Name <br>
+                                <input type="text" name="Name" id="F-name" required="" minlength="2">
+                            </label>
+                        </div>
+                        <div class="name LN">
+                            <label for=""> Last Name <br>
+                                <input type="text" name="Name" id="L-name" required=""minlength="2">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="E-form">
+                        <label for=""> E-mail <br>
+                            <input type="email" name="Email" id="Email" required="">
+                            <span> We'll never share your email with anyone else.</span>
+                        </label>
+                    </div>
+                    <div class="S-form">
+                        <label for="male" class="radioButn">
+                            <input type="radio" name="sex" id="male" required="">
+                            Male
+                        </label>
+                        <label for="female" class="radioButn">
+                            <input type="radio" name="sex" id="female" required="">
+                            Female
+                        </label>
+                    </div>
+                    <div class="C-form">
+                        <div class="country">
+                            <label for="country"> Country <br>
+                                <select name="country" id="country" required="">
+                                    <option value="" selected> Select... </option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Polska"> Polska</option>
+                                    <option value="USA"> USA</option>
+                                    <option value="Canada"> Canada</option>
+                                    <option value="Germany">Germany</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="City">
+                            <label for=""> City <br>
+                                <input type="text" name="City" id="City" required="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="Sub-form">
+                        <button type="submit">
+                            Sigh up
+                        </button>
+                    </div>
+                </form>
+                <div class="text">
+                    <p>
+                        By clicking the 'Sign Up' button, you confirm that you accept our <br>
+                        <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>                       .
+                    </p>
+                    <div class="line"></div>
+                    <p>Have an account? <a href="" id="LogIn">Log in</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
