@@ -13,16 +13,18 @@
     justify-content: flex-end;
 }
 header{
-    padding-top: 13px;
+    
     position: fixed;
     width: 100%;
     height: 50px;
     z-index: 3;
+    background-color: rgb(255, 255, 255);
 }
 .secCon{
     max-width: 785px;
 }
 nav{
+    padding-top: 13px;
     height: 100%;
     background-color: rgb(255, 255, 255);
     
@@ -62,6 +64,9 @@ aside{
     position: sticky;
     top: 100px;
 }
+aside h2{
+    margin-bottom: 80px;
+}
 aside h2 a{
     display: block;
     text-decoration: none;
@@ -69,7 +74,7 @@ aside h2 a{
     border-bottom: 1px solid #BDBDBD;
 }
 .col2{
-    margin-left: 170px;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     position: relative;
