@@ -30,7 +30,7 @@ header nav {
     border-bottom: 1px solid #828282;
     box-shadow: 5px   rgba(0, 0, 0, 0.2);
     width: 944px;
-    text-shadow: #FC0 1px 0 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 header nav li {
@@ -127,9 +127,8 @@ header nav li a:hover {
 
 .skills-program {
     display: flex;
-    align-self: center;
-    flex-direction: row;
-    text-align: center;
+justify-content: space-between;
+    color: #828282;
 }
 
 .skills-program p {
@@ -140,14 +139,8 @@ header nav li a:hover {
     line-height: 17px;
     text-align: center;
 }
-
-.middle {
-    margin-left: 167px;
-}
-
-.middle-2 {
-    margin-left: 167px;
-    margin-right: 167px;
+.skills-icon{
+    max-width: 170px;
 }
 
 .name {
@@ -155,7 +148,10 @@ header nav li a:hover {
     margin: 15px;
 
 }
-
+.program-stars{
+    display: flex;
+    justify-content: space-between;
+}
 #portfolio {
     display: flex;
     justify-content: center;
@@ -165,6 +161,7 @@ header nav li a:hover {
 #portfolio h2 {
     margin-top: 100px;
     margin-bottom: 68px;
+    text-align: center;
 
 }
 
@@ -174,6 +171,8 @@ header nav li a:hover {
     max-width: 230px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    text-decoration: underline;
 }
 #contacts {
     text-align: center;
@@ -186,18 +185,21 @@ header nav li a:hover {
     font-size: 34px;
     line-height: 46px;
 }
-#contacts p {
+#contacts  p {
     margin-top: 21px;
     margin-bottom: 86px;
     max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #send {
     border: 1px solid black;
-    border-radius: 10px;
-    background-color: black;
+    background: #070707;
+border-radius: 22px;
     max-width: 150px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 16px;
    
 }
 #send a{
@@ -212,6 +214,9 @@ header nav li a:hover {
 .socialNetwork {
     margin-top: 46px;
 }
+.socialNetwork a{
+    margin: 0 25px;
+}
 
 .SNtext p {
     font-weight: 400;
@@ -219,4 +224,5 @@ header nav li a:hover {
     line-height: 19px;
     text-align: center;
     color: #828282;
+    margin: 0 auto;
 }
