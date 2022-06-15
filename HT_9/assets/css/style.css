@@ -8,7 +8,6 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    /* border: 1px solid green; */
 }
 header{
     padding-top: 13px;
@@ -58,7 +57,7 @@ main h2>span{
     font-family: 'Farro';
 font-style: normal;
 font-weight: 300;
-font-size: 30px;
+font-size: 20px;
 line-height: 30px;
 vertical-align: text-top;
 }
@@ -69,15 +68,13 @@ font-weight: 400;
 font-size: 28px;
 line-height: 48px;
 }
-#underline{
+.underline{
     text-decoration: underline;
 }
 section{
     margin-top: 70px;
 }
-#ital{
-    font-style: italic;
-}
+
 .text{
     font-family: 'PT Sans';
     font-style: normal;
@@ -88,9 +85,9 @@ section{
 .text p{
     margin-top: 40px;
 }
-#weightBold{
+.weightBold{
     font-weight: 700;
 }
-#bcg-text{
+.bcg-text{
     background-color: rgb(202, 193, 193);
 }

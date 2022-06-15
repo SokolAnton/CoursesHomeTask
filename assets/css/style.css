@@ -15,12 +15,12 @@ body {
 }
 .Num{
   width: 220px;
-  border-right: 5px solid #3a8b99;
-  border-left: 5px solid #3a8b99;
+  border-right: 5px solid #22464d;
+  border-left: 5px solid #22464d;
   border-radius: 10px ;
   font-size: 10px;
   font-weight: bold;
-  background-color: #3a8b99;
+  background-color: #22464d;
 }
 .SecNum{
   display: none;
@@ -62,7 +62,7 @@ body {
   background-color: #fff;
 }
 .back {
-  background-color: #5bbecf;
+  background-color: #22464d;
   transform: rotateY(180deg);
 }
 .card:hover .front {transform: rotateY(180deg);}
