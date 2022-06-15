@@ -73,8 +73,13 @@ aside h2 a{
     flex-direction: column;
     position: relative;
 }
-#big-picture{
+section{
+    z-index: 2;
+}
+.big-picture{
     position: fixed;
+    top: 133px;
+    right: 0;
     z-index: 1;
 }
 main{
