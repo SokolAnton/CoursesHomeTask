@@ -1,34 +1,40 @@
 *,
 ::after,
-::before{
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: sans-serif;
-  }
-  .main{
+}
+
+.main {
     display: flex;
     justify-content: space-between;
     /* flex-wrap: wrap; */
     background-color: aqua;
-  }
-  .wrap {
+}
+
+.wrap {
     margin: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-  }
-  .card {
+}
+
+.card {
     margin: 10px;
     width: 200px;
     height: 300px;
     position: relative;
     perspective: 1000px;
-  }
-  .front, .back {
+}
+
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -38,92 +44,118 @@ body {
     transition: 1s;
     backface-visibility: hidden;
     border-radius: 10px;
-  }
-  .front {
+}
+
+.front {
     background-color: #fff;
-  }
-  .back {
+}
+
+.back {
     background-color: #ffffff;
     transform: rotateY(180deg);
     padding: 10px;
-  }
-  .back_column{
+}
+
+.back_column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  .name{
+}
+
+.name {
     margin: 2px;
-  }
-  .name_ten{
-    margin-left:0 ;
-  }
-  .left{
+}
+
+.name_ten {
+    margin-left: 0;
+}
+
+.left {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-  }
-  .right{
+}
+
+.right {
     width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-  }
-  .right_rotate{
+}
+
+.right_rotate {
     transform: rotate(180deg)
-  }
-  .card:hover .front {transform: rotateY(180deg);}
-  .card:hover .back {transform: rotateY(360deg);}
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+    animation: none;
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+    animation: none;
+}
 
 
-  @keyframes rotateCardFront {
-    from{
+@keyframes rotateCardFront {
+    from {
         transform: rotateY(0deg);
     }
-    50%{
+
+    50% {
         transform: rotateY(180deg)
     }
-    to{
+
+    to {
         transform: rotateY(360deg);
     }
 }
+
 @keyframes rotateCardBack {
-    from{
+    from {
         transform: rotateY(180deg);
     }
-    50%{
+
+    50% {
         transform: rotateY(360deg)
     }
-    to{
+
+    to {
         transform: rotateY(540deg);
     }
 }
 
-.card--front_animation{
+.card--front_animation {
     animation: rotateCardFront 2.5s ease infinite;
-    
+
 }
 
-.card--back_animation{
+.card--back_animation {
     animation: rotateCardBack 2.5s ease infinite;
 }
 
-.card--front_delay-part1{
+.card--front_delay-part1 {
     animation-delay: 1.5s;
 }
-.card--back_delay-part1{
+
+.card--back_delay-part1 {
     animation-delay: 1.5s;
 }
-.card--front_delay-part2{
+
+.card--front_delay-part2 {
     animation-delay: 2s;
 }
-.card--back_delay-part2{
+
+.card--back_delay-part2 {
     animation-delay: 2s;
 }
-.card--back_delay-part3{
+
+.card--back_delay-part3 {
     animation-delay: .5s;
 }
-.card--front_delay-part3{
+
+.card--front_delay-part3 {
     animation-delay: .5s;
 }
