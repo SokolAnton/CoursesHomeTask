@@ -1,0 +1,202 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: green;
+    --grey: #7690A8;
+    --grey-brd: #EFEEF3;
+    --black-txt: #16133D;
+    --grey-item-brd: #E5EAF4;
+    --green-item-brd-hover: #3DB370;
+    --ftr-bcg: #16133D;
+    --icons-servis-color:#52C29D;
+}
+
+.body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+    border-bottom: 1px solid var(--grey-brd);
+}
+
+.main {
+    padding-top: 180px;
+    padding-bottom: 100px;
+}
+
+.text--p {
+    line-height: 21px;
+    color: var(--grey);
+}
+
+.text--p_spacing {
+    margin-bottom: 15px;
+}
+.text--h1_spacing{
+    margin-bottom: 40px;
+}
+
+.text--h1 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: var(--black-txt);
+}
+
+.cards_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item_width {
+    max-width: 370px;
+}
+.item_brd {
+    border: 1px solid var(--grey-item-brd);
+    border-radius: 8px;
+}
+.item_spacing {
+    padding: 40px;
+}
+
+.item_hover:hover {
+    border: 1px solid var(--green-item-brd-hover);
+    cursor: pointer;
+}
+.item_hover:hover svg {
+    fill: var(--icons-servis-color)
+}
+
+.content {
+    max-width: 290px;
+}
+.content svg{
+    fill: #007FFC;
+}
+.content_flex {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.txt_spacing{
+    margin-top: 30px;
+}
+.txt--h2{
+    font-size: 24px;
+    line-height: 21px;
+}
+.txt--lorem{
+    margin-bottom: 30px;
+}
+.text--h2_spacing{
+    margin-bottom: 15px;
+}
+.link_decor a{
+    text-decoration: none;
+    color: var(--green-item-brd-hover);
+    font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+}
+.footer_spacing{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer_bcg {
+    background-color: var(--ftr-bcg);
+}
+.footer--container-logo{
+margin-bottom: 40px;
+}
+.footer svg{
+    width: 20px;
+    height: 20px;
+}
+.socials_flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.logos{
+    width: 38px;
+    height: 38px;
+}
+.logos_spacing{
+    padding: 9px; 
+    margin-left: 10px;
+}
+.logos_padding{
+    padding: 9px;
+}
+.logos_bcg{
+    background-color: #EFEEF3; 
+}
+.logos_border{
+    border-radius: 5px;
+}
+.inst-green,
+.Fb-green,
+.Git-green,
+.Drb-green,
+.Tw-green{
+    display: none;
+}
+
+.inst,
+.Tw,
+.Fb,
+.Drb,
+.Git{
+    cursor: pointer;
+}
+.inst:hover .inst-grey{
+    display: none;
+}
+.inst:hover .inst-green{
+    display: block;
+}
+.Fb:hover .Fb-grey{
+    display: none;
+}
+.Fb:hover .Fb-green{
+    display: block;
+}
+.Git:hover .Git-grey{
+    display: none;
+}
+.Git:hover .Git-green{
+    display: block;
+}
+.Drb:hover .Drb-grey{
+    display: none;
+}
+.Drb:hover .Drb-green{
+    display: block;
+}
+.Tw:hover .Tw-grey{
+    display: none;
+}
+.Tw:hover .Tw-green{
+    display: block;
+}
