@@ -312,7 +312,7 @@ body {
 
 .data_flex {
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -387,6 +387,7 @@ label+label {
     background: #565656;
     color: white;
     border: none;
+    
 }
 
 .buton_spacing {
@@ -406,6 +407,51 @@ svg {
 
 .icons:hover {
     background-color: #565656;
+}
+
+/* nav links  */
+
+
+.links a:active{
+    border-bottom: 1px solid black;
+}
+.buton:hover{
+background-color: #323232;
+cursor: pointer;
+}
+
+.input input{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #F4F4F4;
+    padding-bottom: 8px;
+}
+.input input{
+    outline: none;
+}
+
+.svg-before{
+    fill:#7B7B7B ;
+}
+.svg-before:hover {
+    fill: black;
+}
+.svg-before::after{
+    content: "Read more";
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 166.3%;
+/* identical to box height, or 27px */
+
+letter-spacing: 0.1em;
+
+color: #000000;
+    opacity: 0;
+}
+.svg-before:hover::after{
+opacity: 1;
 }
 
 
@@ -488,5 +534,79 @@ svg {
     input, textarea{
         border: none;
         background-color: #F4F4F4;
+    }
+}
+@media screen and (max-width:320px){
+    .container{
+        max-width: 300px;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    .body img{
+       width: 300px; 
+       height: 250px;
+    }
+    .first-screen--title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .hamburger{
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    .info--title{
+        align-self: center;
+    }
+    .info--block{
+        flex-direction: column;
+    }
+    .info--block_reverse{
+        flex-direction: column-reverse;
+    }
+    .inf-text a{
+        max-width: 300px;
+    }
+    .info--img-2{
+        margin-left: 0;
+    }
+    
+
+    .inf-text--text{
+        margin-bottom: 37px;
+    }
+
+    .heading_flex{
+        flex-direction: column;
+    }
+    .input--h1{
+        text-align: center;
+    }
+    .item{
+        flex-direction: column;
+    }
+    .btm-text{
+        font-size: 16px;
+line-height: 166%;
+/* or 27px */
+
+text-align: center;
+letter-spacing: 0.1em;
+text-align: center;
+    }.element+.element{
+        margin-left: 0;
+    }
+    .item_reverse{
+        flex-direction: column-reverse;
+    }
+    .item--img_row-reverse{
+        margin-left: 0;
+    }
+    .heading-text_spacing{
+        max-width: 300px;
+    }
+    .item--img_row-reverse{
+        flex-direction: column-reverse;
     }
 }
