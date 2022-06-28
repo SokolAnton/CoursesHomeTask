@@ -1,3 +1,5 @@
+
+
 *,
 ::after,
 ::before{
@@ -5,155 +7,302 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.cursor{
+    cursor:pointer;
+}
+
 body{
-    font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 22px;
+    background: #E5E5E5;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter';
+    color: #007BFF;
 }
 
-.main{
+main{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-}
-main input{
-    border: 1px solid #E4E4E4;
-border-radius: 6px;
-}
-.container{
-    margin:  0 auto;
-    max-width: 570px;
-    
-    border: 3px dotted rgb(90, 182, 90);
+    flex-direction: row;
+    background-color: #E5E5E5;
     
 }
-.block-1 h2{
+
+h2{
+    margin: 0;
+    color: #1C1C1C;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
-font-size: 24px;
-line-height: 32px;
-color: #1C1C1C;
-margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32px;
 }
-label{
-    letter-spacing: -0.2px;
-    color: #545454;
-}
-input,
-select{
-    outline: none;
-}
-input:focus,
-select{
-    border-color: #007BFF;
-}
-.N-form{
-    display: flex;
-}
-.name{
-    width: 49%;
 
+
+.container_form{
+    margin: 55px 15px;
+    padding: 35px 35px 16px 35px;
+    background-color: #FFFFFF;
+    width: 570px;
 }
-.name input{
-    margin: 7px;
-    margin-left: 0px;
-    width: 100%;
-}
-.LN{
-    margin-left: 12px;
-}
-.E-form{
+
+.container__input{
+    display: flex; 
     margin-top: 20px;
-    margin-bottom: 20px;
-    /* border: 1px solid black; */
 }
-.E-form input{
-    width: 100%;
-    margin-top: 7px;
+.input{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form_name{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.form_label  {
     margin-bottom: 7px;
 }
-.E-form span{
-    font-size: 13px;
-line-height: 18px;
-letter-spacing: -0.1px;
-color: #969696;
-}
-.S-form{
-    margin-bottom: 20px;
-}
-.S-form input{
-    margin-right: 8px;
-}
-.S-form label{
-    margin-right: 21px;
-}
-.country{
-    width:49%;
-    margin-right: 10px;
-}
-.country select{
-    width: 100%;
 
+label,
+.LogIn>span{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color:#545454;
 }
-.C-form{
-    display: flex;
-}
-.City{
-    width: 49%;
-}
-.City input{
-    width: 100%;
-}
-.Sub-form{
-    margin-top: 20px;
-    margin-bottom: 22px;
-    background: #007BFF;
-border: 1px solid #E4E4E4;
-border-radius: 6px;
-text-align: center;
-padding: 8px 10px;
-}
-.Sub-form button{
-    background-color:#007BFF ;
-    border:none ;
-    width: 100%;
-}
-.text{
-    max-width: 410px;
-    
-}
-.text p{
-    font-size: 13px;
-line-height: 18px;
-letter-spacing: -0.1px;
-text-align: center;
-color: #969696;
-margin-bottom: 20px;
 
-}
-.text a{
+input,
+select{
+    border: 1px solid #E4E4E4;
+    background: #FFFFFF;
+    border-radius: 6px;
+    height: 38px;
+    width: 245px;
+    padding: 8px 10px;
+    outline: none;
     font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    cursor: pointer;
+}
+
+.bottom_text{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
-    text-decoration: none;
+    letter-spacing: -0.1px;
+    color: #969696;
+    margin-top:7px;
+}
+
+.input__left{
+    margin-right: 12px;
+}
+
+input:hover{
+    border-color: blue;
+}
+
+input:focus{
+    border-color: blue;
+}
+
+
+.email{
+    width: 100%;
+}
+
+.radioButton{
+    padding-top: 20px;
+}
+input[type="radio"],
+input[type="file"]{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor:pointer;
+}
+
+.checkbox{
+    display: inline-flex;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+.radioButton.gender_check div{
+    position: relative;
+    display: inline-flex;
+    margin-right: 20px;
+    height: 22px;
+}
+
+label .checkbox::before{
+    content:'';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    margin-right: 8px;
+    
+}
+input[type="radio"]:checked + label .checkbox::before{
+    background-color:white;
+    border-radius: 50%;
+    border: 6px solid #007BFF;
+    transition: 0.1s;
+}
+
+.Country{
+    margin-right: 10px;
+}
+
+.button{
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.SignUp{
+    width: 100%;
+}
+.Update{
+    width: 150px;
+}
+button span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+}
+
+.SignUpPolicy{
+    text-align: center;
+    padding: 20px 45px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.SignUpPolicy span{
+    padding: 0 25px;
+}
+
+.LogIn{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.LogIn span{
+    margin-right: 20px;
+}
+.LogIn a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
     color: #007BFF;
 }
-.line{
-    border-top: 1px solid #E4E4E4;
-    margin-bottom: 20px;
+
+.Profile .email{
+    width: 245px;
 }
-#LogIn{
+
+button:hover{
+    cursor:pointer;
+}
+
+button:active{
+    transform: scale(1.01);
+}
+
+.profile_img form{
+    display: flex;
+}
+.load_img_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 185px;
+    align-items:flex-start;
+    margin-top: 11px;
     margin-left: 20px;
 }
-#F-name:valid, 
-#L-name:valid,
-#Email:valid{
-    background-color: rgb(113, 206, 113);
-
+.loadFile{
+    position: relative;
+    width: 138px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
+.loadFile:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.loadFile label{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    content: url(../img/load_img.png);
+    padding-right: 8px
+}
+
+.bottom_text_img{
+    margin-top: 9px;
+}
+
+.delete__img__button{
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.delete__img__button:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.delete__img__button .button_img img{
+    height: 16px;
+    width: 16px;
+
+}
 
