@@ -1,0 +1,43 @@
+.header{
+    &--container{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        .container{
+            &--p{
+                @include font($Lato,$size-16,$w-400,$LtSp-05,$LHght-150,$black)
+            }
+        }
+    }
+}
+
+.main{
+    &--container{
+        .container{
+            &--First-Screen{
+                @include m-bot(90px);
+                .First-Screen{
+                    &--h1{
+                        @include font($RedHat,$size-48,$w-600,$LtSp-005,$LHght-133,$black);
+                        @include m-bot(70px);
+                    }
+                }
+               
+            }
+            &--First-descr{
+                @include m-bot(90px);
+                .First-descr{
+                    &--subtitle{
+                        @include font($RedHat,$size-28,$w-600,$LtSp-01,$LHght-166,$black);
+                        @include m-bot(50px);    
+                    }
+                    &--text{
+                        max-width: 570px;
+                        @include font($Lato,$size-19,$w-400,$LtSp-005,$LHght-168,$black)
+                    }
+
+                }
+                
+            }
+        }
+    }
+}

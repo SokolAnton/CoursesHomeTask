@@ -1,0 +1,12 @@
+@mixin font($family,$size,$weight,$letter-sps,$line-height,$color) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter-sps;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin m-bot($m-bot) {
+    margin-bottom: $m-bot;
+}

@@ -1,0 +1,60 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header--container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.header--container .container--p {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400px;
+  letter-spacing: 0.5em;
+  line-height: 150%;
+  color: #000;
+}
+
+.main--container .container--First-Screen {
+  margin-bottom: 90px;
+}
+.main--container .container--First-Screen .First-Screen--h1 {
+  font-family: "Red Hat Display";
+  font-size: 48px;
+  font-weight: 600px;
+  letter-spacing: 0.05em;
+  line-height: 133%;
+  color: #000;
+  margin-bottom: 70px;
+}
+.main--container .container--First-descr {
+  margin-bottom: 90px;
+}
+.main--container .container--First-descr .First-descr--subtitle {
+  font-family: "Red Hat Display";
+  font-size: 28px;
+  font-weight: 600px;
+  letter-spacing: 0.1em;
+  line-height: 166%;
+  color: #000;
+  margin-bottom: 50px;
+}
+.main--container .container--First-descr .First-descr--text {
+  max-width: 570px;
+  font-family: "Lato";
+  font-size: 19px;
+  font-weight: 400px;
+  letter-spacing: 0.05em;
+  line-height: 168%;
+  color: #000;
+}/*# sourceMappingURL=app.css.map */

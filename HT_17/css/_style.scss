@@ -195,8 +195,6 @@
     
 .main{
     .container {
-        &--section-head{
-        }
         &--slider {
             @include flex-column-reverse;
             .slider {
