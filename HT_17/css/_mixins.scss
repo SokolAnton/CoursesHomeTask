@@ -1,0 +1,31 @@
+@mixin fonts($family, $weight, $Lheight, $font-size, $color ) {
+    font-family: $family;
+    line-height: $Lheight;
+    font-weight: $weight;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@mixin scale($scale-point){
+    transform: scale($scale-point);
+}
+
+@mixin transition($property...) {
+    transition-duration: .3s;
+    transition-property: $property;
+    transition-timing-function: ease;
+}
+
+
+
+@mixin media($width) {
+    @media screen and(max-width: $width) {
+        @content;
+    }
+}

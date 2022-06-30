@@ -1,0 +1,220 @@
+.main {
+    padding-top: 121px;
+    padding-bottom: 122px;
+
+    &--container {
+        width: 90%;
+        max-width: 1170px;
+        margin: 0 auto;
+
+    }
+
+    .container {
+        &--section-head {
+            margin-bottom: 40px;
+
+            .section-head--p {
+                margin-bottom: 15px;
+                text-align: $txt-center;
+                @include fonts($font-Raleway, $weight-400, $line-24, $size-18, $color-subtitle);
+            }
+
+            .section-head--h1 {
+                text-align: $txt-center;
+                margin-bottom: 40px;
+                @include fonts($font-Roboto, $weight-900, $line-66, $size-60, $color-gold);
+            }
+        }
+
+        &--slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .slider {
+                max-width: 1030px;
+
+                &--left {
+                    max-width: 41%;
+                    margin-top: 60px;
+                    margin-right: 135px;
+                    position: relative;
+                    padding: 15px;
+
+                    .left {
+                        &--corner {
+                            border-top: 1px solid $color-gold;
+                            border-left: 1px solid $color-gold;
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                        }
+
+                        
+                        &--corner-0 {
+                            top: 0;
+                            left: 0;
+                        }
+
+                        &--corner-90 {
+                            transform: rotate(90deg);
+                            right: 0;
+                            top: 0;
+                        }
+
+                        &--corner-180 {
+                            transform: rotate(180deg);
+                            bottom: 0;
+                            right: 0;
+                        }
+
+                        &--corner-270 {
+                            transform: rotate(270deg);
+                            left: 0;
+                            bottom: 0;
+                        }
+
+                    }
+                }
+
+                &--right {
+                    text-align: center;
+                    max-width: 41%;
+                    margin-top: 50px;
+                    margin-left: 85px;
+
+                    .right {
+
+                        display: flex;
+                        flex-direction: column;
+
+                        &--name {
+                            @include fonts($font-Roboto, $weight-900, $line-42, $size-36, $color-name);
+                            text-align: $txt-center;
+                            text-transform: capitalize;
+                            margin-bottom: 30px;
+                        }
+
+                        &--icons {
+                            .icons {
+                                &--svg {
+                                    fill: white;
+                                    stroke: $color-stroke;
+                                    cursor: pointer;
+                                }
+
+                                &--svg path {
+                                    fill: $color-stroke;
+                                }
+
+                                &--svg {
+                                    margin-left: 5px;
+
+                                }
+
+                                &--svg:hover {
+                                    stroke: $color-gold;
+                                }
+
+                                &--svg:hover path {
+                                    fill: $color-gold;
+                                }
+                            }
+
+                        }
+
+                        &--divider-name {
+                            @include fonts($font-Raleway, $weight-400, $line-36, $size-24, $color-name);
+                            text-align: $txt-center;
+                            text-transform: capitalize;
+                            margin-bottom: 30px;
+                        }
+
+                        &--lorem {
+                            @include fonts($font-Raleway, $weight-500, $line-24, $size-14, $color-txt);
+                            margin-top: 49px;
+                            margin-bottom: 20px;
+                        }
+
+                        &--buton {
+                            margin-top: 25px;
+                            padding: 5px 10px;
+                            border: 1px solid $color-gold;
+                            @include fonts($font-Open-Sans, $weight-700, $line-14, $size-14, $color-name);
+                            text-align: $txt-center;
+                            text-transform: uppercase;
+                            width: 118px;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            .buton {
+                                &--a {
+                                    color: $color-name;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.line {
+    width: 1px;
+    height: 560px;
+    border-left: 1px solid $color-gold;
+}
+
+.container_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.section-head--p_uppercase,
+.section-head--h1_uppercase,
+.buton_uppercase {
+    text-transform: uppercase;
+}
+
+
+@media screen and(max-width:1150px){
+    .left--corner{
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+}
+@include media( $Phone-widht) {
+    
+.main{
+    .container {
+        &--section-head{
+        }
+        &--slider {
+            @include flex-column-reverse;
+            .slider {
+                &--left {
+                    margin-right: 0;
+
+                    .left {
+                        &--corner {
+                            display: none;
+                        }
+                    }
+                }
+                &--right{
+                    margin-left: 0;
+                }
+            }
+        }
+
+    }
+}
+}
