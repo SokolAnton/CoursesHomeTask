@@ -10,3 +10,18 @@
 @mixin m-bot($m-bot) {
     margin-bottom: $m-bot;
 }
+
+@mixin m-top($m-top) {
+    margin-top: $m-top;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+@mixin  flex-column {
+    display: flex;
+    flex-direction: column;
+}

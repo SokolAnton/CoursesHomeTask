@@ -12,6 +12,11 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .header--container {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -23,6 +28,7 @@
   letter-spacing: 0.5em;
   line-height: 150%;
   color: #000;
+  color: #565656;
 }
 
 .main--container .container--First-Screen {
@@ -36,6 +42,9 @@
   line-height: 133%;
   color: #000;
   margin-bottom: 70px;
+}
+.main--container .container--First-Screen .First-Screen--img img {
+  width: 100%;
 }
 .main--container .container--First-descr {
   margin-bottom: 90px;
@@ -57,4 +66,162 @@
   letter-spacing: 0.05em;
   line-height: 168%;
   color: #000;
+  margin-bottom: 90px;
+  color: #565656;
+}
+.main--container .container--section .section--subtitle {
+  font-family: "Red Hat Display";
+  font-size: 28px;
+  font-weight: 600px;
+  letter-spacing: 0.1em;
+  line-height: 166%;
+  color: #000;
+  margin-bottom: 50px;
+}
+.main--container .container--section .section--img {
+  margin-bottom: 20px;
+}
+.main--container .container--section .section--text {
+  font-family: "Lato";
+  font-size: 19px;
+  font-weight: 400px;
+  letter-spacing: 0.05em;
+  line-height: 168%;
+  color: #000;
+  margin-bottom: 90px;
+  color: #565656;
+}
+
+.footer--container {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.footer--container .container--info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer--container .container--info .info--left .left--h2 {
+  margin-bottom: 30px;
+  font-family: "Red Hat Display";
+  font-size: 48px;
+  font-weight: 400px;
+  letter-spacing: 0.05em;
+  line-height: 133%;
+  color: #000;
+}
+.footer--container .container--info .info--left .left--links {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400px;
+  letter-spacing: 0.05em;
+  line-height: 168%;
+  color: #000;
+}
+.footer--container .container--info .info--social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer--container .container--info .info--social .social--icons {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 23px;
+}
+.footer--container .container--info .info--social .social--icons:hover {
+  background-color: #565656;
+}
+.footer--container .container--info .info--social .social--icons:hover svg {
+  fill: white;
+}
+
+@media screen and (max-width: 320px) {
+  .header--container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .main--container .container--First-Screen {
+    margin-bottom: 70px;
+  }
+  .main--container .container--First-Screen .First-Screen--h1 {
+    font-family: "Red Hat Display";
+    font-size: 30px;
+    font-weight: 600px;
+    letter-spacing: 0.05em;
+    line-height: 166%;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  .main--container .container--First-Screen .First-Screen--img img {
+    width: 100%;
+  }
+  .main--container .container--First-descr {
+    margin-bottom: 70px;
+  }
+  .main--container .container--First-descr .First-descr--subtitle {
+    font-family: "Red Hat Display";
+    font-size: 28px;
+    font-weight: 600px;
+    letter-spacing: 0.1em;
+    line-height: 166%;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  .main--container .container--First-descr .First-descr--text {
+    max-width: 570ox;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400px;
+    letter-spacing: 0.05em;
+    line-height: 32px;
+    color: #000;
+    margin-bottom: 90px;
+    color: #565656;
+  }
+  .main--container .container--section .section--subtitle {
+    font-family: "Red Hat Display";
+    font-size: 26px;
+    font-weight: 600px;
+    letter-spacing: 0.1em;
+    line-height: 166%;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  .main--container .container--section .section--img {
+    margin-bottom: 20px;
+  }
+  .main--container .container--section .section--text {
+    font-family: "Lato";
+    font-size: 19px;
+    font-weight: 400px;
+    letter-spacing: 0.05em;
+    line-height: 168%;
+    color: #000;
+    margin-bottom: 70px;
+    color: #565656;
+  }
+
+  .footer--container .container--info {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .footer--container .container--info .info--social {
+    margin-top: 40px;
+  }
+  .footer--container .container--info .info--social .social--icons {
+    margin-left: 0;
+    margin-right: 13px;
+  }
+  .footer--container .container--info .info--social .social--icons .icons--inst {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section--text {
+    margin-bottom: 70px;
+  }
 }/*# sourceMappingURL=app.css.map */
