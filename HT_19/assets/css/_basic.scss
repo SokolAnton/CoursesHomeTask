@@ -1,0 +1,18 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+.container{
+    overflow-x: hidden;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+}

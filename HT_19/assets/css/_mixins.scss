@@ -1,0 +1,33 @@
+@mixin d-flex-s-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin font($family, $size, $weight, $letter-sps, $line-height, $color) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $letter-sps;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin cursor-pointer {
+    cursor: pointer;
+}
+
+@mixin Monst400 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin Monst500 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
