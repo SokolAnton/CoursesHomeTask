@@ -17,6 +17,10 @@ a {
   color: #000;
 }
 
+img {
+  width: 100%;
+}
+
 .header--container {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -28,7 +32,7 @@ a {
   letter-spacing: 0.5em;
   line-height: 150%;
   color: #000;
-  color: #565656;
+  color: #000;
 }
 
 .main--container .container--First-Screen {
@@ -131,6 +135,9 @@ a {
   align-items: center;
   margin-left: 23px;
 }
+.footer--container .container--info .info--social .social--icons .icons--svg {
+  fill: #565656;
+}
 .footer--container .container--info .info--social .social--icons:hover {
   background-color: #565656;
 }
@@ -172,14 +179,14 @@ a {
     margin-bottom: 40px;
   }
   .main--container .container--First-descr .First-descr--text {
-    max-width: 570ox;
+    max-width: 45%;
     font-family: "Lato";
     font-size: 16px;
     font-weight: 400px;
     letter-spacing: 0.05em;
     line-height: 32px;
     color: #000;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     color: #565656;
   }
   .main--container .container--section .section--subtitle {
@@ -204,10 +211,17 @@ a {
     margin-bottom: 70px;
     color: #565656;
   }
-
+}
+@media screen and (max-width: 768px) {
+  .section--text {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 800px) {
   .footer--container .container--info {
     margin: 0 auto;
     flex-direction: column;
+    align-items: center;
   }
   .footer--container .container--info .info--social {
     margin-top: 40px;
@@ -218,10 +232,5 @@ a {
   }
   .footer--container .container--info .info--social .social--icons .icons--inst {
     margin-left: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section--text {
-    margin-bottom: 70px;
   }
 }/*# sourceMappingURL=app.css.map */
