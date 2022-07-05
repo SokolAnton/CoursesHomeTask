@@ -1,0 +1,24 @@
+.main{
+    &--container{
+        .container{
+            &--sity-works{
+                .sity-works{
+                    &--gallery{
+                        display: grid;
+                        grid-template-columns: repeat(2,auto);
+                        gap: 15px 30px;
+                        background-color: aliceblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block{
+    background-color: aqua;
+    border: 1px solid green;
+    height: auto;
+}
+.change{
+}

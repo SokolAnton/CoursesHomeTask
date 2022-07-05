@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between;
 }
+@mixin  d-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 @mixin font($family, $size, $weight, $letter-sps, $line-height, $color) {
     font-family: $family;

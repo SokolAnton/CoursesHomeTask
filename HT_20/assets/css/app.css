@@ -1,0 +1,33 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.main--container .container--sity-works .sity-works--gallery {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 15px 30px;
+  background-color: aliceblue;
+}
+
+.block {
+  background-color: aqua;
+  border: 1px solid green;
+  height: auto;
+}/*# sourceMappingURL=app.css.map */

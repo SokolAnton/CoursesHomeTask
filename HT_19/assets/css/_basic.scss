@@ -11,8 +11,16 @@ body{
 }
 
 .container{
+    width: 90%;
     overflow-x: hidden;
     max-width: 1170px;
     margin: 0 auto;
     
+}
+// .container-aside{
+//     max-width: 220px;
+//     margin: 0 auto;
+// }
+ul li{
+    list-style: none;
 }
