@@ -24,3 +24,22 @@ body{
 ul li{
     list-style: none;
 }
+
+.flex-row-align{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.marg-left15{
+    padding-left: 15px;
+}
+.marg-left20{
+    margin-left: 20px;
+}
+
+.just-center{
+    display: flex;
+    justify-content: center;
+}

@@ -22,11 +22,33 @@ ul li {
   list-style: none;
 }
 
+.flex-row-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.marg-left15 {
+  padding-left: 15px;
+}
+
+.marg-left20 {
+  margin-left: 20px;
+}
+
+.just-center {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background: #FFFFFF;
   width: 81.25%;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.4s ease;
 }
 .header--container {
   padding-top: 31px;
@@ -83,20 +105,76 @@ ul li {
 }
 
 .aside {
-  width: 6%;
+  overflow-x: hidden;
+  width: 7.63889%;
   position: absolute;
   top: 0;
-  left: 5px;
+  left: 0px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 20p;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   padding-top: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 40px;
   transition: all 0.5s ease;
+  color: #4F4F4F;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 .aside:hover {
   width: 15.27777%;
+}
+.aside:hover .title {
+  display: block;
+}
+.aside:hover .divider {
+  display: none;
+}
+.aside:hover + .header + .main {
+  padding-left: 110px;
+  padding-right: 60px;
+}
+.aside:hover + .header {
+  padding-left: 80px;
+  padding-right: 40px;
+}
+.aside--container-aside .container-aside--logo {
+  margin-bottom: 40px;
+}
+.aside--container-aside .container-aside--logo .logo--title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #392C72;
+}
+.aside--container-aside .container-aside--dashboard {
+  margin-bottom: 30px;
+}
+.aside--container-aside .container-aside--categories .categories--apps {
+  margin-top: 30px;
+}
+.aside--container-aside .container-aside--categories .categories--apps .apps--divider {
+  margin-bottom: 5px;
+}
+.aside--container-aside .container-aside--categories .categories--apps .apps--title {
+  color: #828282;
+  text-transform: uppercase;
+}
+.aside--container-aside .container-aside--categories .categories--apps .apps--elements:hover {
+  background-color: #9E8CFC;
+}
+.aside--container-aside .container-aside--categories .categories--apps .apps--elements:hover svg {
+  fill: white;
+}
+.aside--container-aside .container-aside--categories .categories--apps .apps--elements:hover {
+  color: white;
+}
+
+.svg {
+  width: 26px;
 }
 
 .svg-hover:hover {
@@ -105,7 +183,9 @@ ul li {
 }
 
 .main {
-  margin-left: 200px;
+  width: 81.25%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .star {
@@ -119,6 +199,10 @@ ul li {
   justify-content: center;
   width: 55px;
   margin-bottom: 15px;
+}
+
+.title {
+  display: none;
 }
 
 .arrow {
