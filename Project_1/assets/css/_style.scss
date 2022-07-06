@@ -1,0 +1,130 @@
+// header
+
+
+.header {
+    &--bcg {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &--container {
+        padding-top: 295px;
+
+        .container {
+            &--data {
+                .data {
+                    &--heading {
+                        font-family: 'Josefin Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 52px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+
+                    &--subtitle {
+                        font-family: 'Josefin Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 28px;
+                        letter-spacing: 0.31em;
+                        color: #FFFFFF;
+                        margin-top: 8px;
+                        margin-bottom: 48px;
+                    }
+
+                    &--search {
+                        padding: 4px 5px;
+                        background-color: white;
+                        margin-bottom: 211px;
+
+                        input {
+                            margin-right: 190px;
+                            margin-left: 31px;
+                            border: none;
+                            width: 277px;
+                            font-family: 'Josefin Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.2em;
+                            color: #999999;
+
+                        }
+
+                        button {
+                            padding: 16px 24px;
+                            background-color: #5373FD;
+                            color: white;
+                            border: none;
+
+                            svg {
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+
+                    &--scroll {
+                        font-family: 'Josefin Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
+                        letter-spacing: 0.2em;
+
+                        a {
+                            color: #FFFFFF;
+                        }
+
+                        p {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include maxWidth($middle-desktop) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@include maxWidth($small-decktop) {
+    .container {
+        max-width: 960px;
+    }
+}
+@include maxWidth(720px) {
+    .container{
+        &--data {
+            .data{
+                &--search{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+@include maxWidth($tablet) {
+    .container {
+        max-width: 720px;
+
+    }
+}
+
+@include maxWidth($mobile) {
+    .container {
+        max-width: 540px;
+
+       
+    }
+}

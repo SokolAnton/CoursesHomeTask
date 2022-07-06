@@ -1,0 +1,127 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1320px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.d-flex-center-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header--bcg {
+  position: absolute;
+  z-index: -1;
+}
+.header--container {
+  padding-top: 295px;
+}
+.header--container .container--data .data--heading {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header--container .container--data .data--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+.header--container .container--data .data--search {
+  padding: 4px 5px;
+  background-color: white;
+  margin-bottom: 211px;
+}
+.header--container .container--data .data--search input {
+  margin-right: 190px;
+  margin-left: 31px;
+  border: none;
+  width: 277px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #999999;
+}
+.header--container .container--data .data--search button {
+  padding: 16px 24px;
+  background-color: #5373FD;
+  color: white;
+  border: none;
+}
+.header--container .container--data .data--search button svg {
+  margin-right: 12px;
+}
+.header--container .container--data .data--scroll {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.header--container .container--data .data--scroll a {
+  color: #FFFFFF;
+}
+.header--container .container--data .data--scroll p {
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 1360px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container--data .data--search {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}/*# sourceMappingURL=app.css.map */
