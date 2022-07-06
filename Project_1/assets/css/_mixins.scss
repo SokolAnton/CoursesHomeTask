@@ -3,3 +3,8 @@
         @content;
     }
 }
+@mixin transition($property...) {
+    transition-duration: .3s;
+    transition-property: $property;
+    transition-timing-function: ease;
+}
