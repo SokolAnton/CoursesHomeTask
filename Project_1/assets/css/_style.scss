@@ -23,8 +23,8 @@
                         text-transform: uppercase;
                         color: #FFFFFF;
                         text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-                        
-                      
+
+
                     }
 
                     &--subtitle {
@@ -187,8 +187,11 @@
 
 
 .header--burger {
-    display: none;
-    position: relative;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    display: block;
     width: 20px;
     height: 14px;
     background: transparent;
@@ -211,7 +214,7 @@
                 justify-content: space-around;
                 align-items: center;
                 padding-top: 120px;
-                margin-bottom: 120px;
+                margin-bottom: 119px;
 
                 .container {
                     &--text {
@@ -275,6 +278,7 @@
                         display: flex;
                         flex-direction: column;
                         margin-right: 112px;
+                        margin-left: 121px;
 
                         .images {
                             &--img2 {
@@ -293,14 +297,14 @@
         background-color: #333333;
         position: relative;
 
-        img {
-            position: absolute;
-            z-index: 1;
-            right: 21.5%;
-            top: 20%;
-        }
-
         .steps {
+            &--line {
+                position: absolute;
+                z-index: 1;
+                margin-left: 21%;
+                margin-top: 40px;
+            }
+
             &--container {
                 padding-top: 107px;
                 padding-bottom: 57px;
@@ -602,12 +606,12 @@
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
                 color: #FFFFFF;
-                
-                    -webkit-mask-image: linear-gradient(-75deg, rgba(255, 0, 0, 0.6) 30%, rgb(255, 0, 0) 50%, rgba(255, 0, 0, 0.6) 70%);
-                    -webkit-mask-size: 200%;
-                    animation: wave 2s infinite;
-                  
-                
+
+                -webkit-mask-image: linear-gradient(-75deg, rgba(255, 0, 0, 0.6) 30%, rgb(255, 0, 0) 50%, rgba(255, 0, 0, 0.6) 70%);
+                -webkit-mask-size: 200%;
+                animation: wave 2s infinite;
+
+
             }
 
             &--subtitle {
@@ -620,16 +624,202 @@
                 color: #FFFFFF;
                 margin-bottom: 20px;
             }
-            &--svg{
-                svg{
-                transition: all .5s ease;
+
+            &--svg {
+                svg {
+                    transition: all .5s ease;
 
                 }
-                svg+svg{
+
+                svg+svg {
                     margin-left: 32px;
                 }
-                svg:hover{
+
+                svg:hover {
                     fill: #5373FD;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$middle-desktop) {
+    .main {
+        .main {
+            &--why {
+                .why {
+                    &--container {
+                        margin-bottom: 90px;
+
+                        .container {
+                            &--text {
+                                .text {
+
+                                    &--desc {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--steps {
+                .steps {
+                    &--line {
+                        margin-left: 21.7%;
+                        margin-top: 60px;
+                    }
+
+                    &--container {
+                        padding-top: 81px;
+                        padding-bottom: 44px;
+
+                        .container {
+                            &--svg {
+                                svg+svg {
+                                    margin-left: 252px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &--booknow {
+                .booknow {
+                    &--container {
+                        margin-left: auto;
+
+                        .container {
+                            &--card {
+                                max-width: 558px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--booknowSec {
+                .booknowSec {
+                    &--container {
+                        margin-left: auto;
+
+                        .container {
+                            &--card {
+                                max-width: 558px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--tourist {
+                .tourist {
+                    &--container {
+                        .container {
+                            &--content {
+                                .content {
+                                    &--review {
+                                        .review {
+                                            &--text {
+                                                height: 308px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:$small-desktop) {
+    .main {
+        &--why {
+            .why {
+                &--container {
+                    margin-bottom: 90px;
+
+                    .container {
+                        &--images {
+                            margin-left: 24px;
+                            margin-right: 0;
+
+                            .images {
+                                &--img2 {
+                                    margin-left: 36px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--steps {
+            .steps {
+                &--line {
+                    margin-left: 19% !important;
+                    margin-top: 60px !important;
+                }
+            }
+
+            .container {
+                &--svg {
+                    svg+svg {
+                        margin-left: 192px !important;
+                    }
+                }
+            }
+        }
+
+        &--booknow {
+            .booknow {
+                &--container {
+
+                    .container {
+                        &--card {
+                            width:550px;
+                        }
+                    }
+                }
+            }
+        }
+        &--booknowSec {
+            .booknowSec {
+                &--container {
+
+                    .container {
+                        &--card {
+                            width:550px;
+                        }
+                    }
+                }
+            }
+        }
+        &--tourist{
+            .tourist{
+                &--container{
+                    .container{
+                        &--content{
+                            .content{
+                                &--review{
+                                    .review{
+                                        &--text{
+                                            height: 336px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

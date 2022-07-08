@@ -38,7 +38,7 @@ a{
     }
 }
 
-@include maxWidth($small-decktop) {
+@include maxWidth($small-desktop) {
     .container {
         max-width: 960px;
     }

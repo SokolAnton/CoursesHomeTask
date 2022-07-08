@@ -194,8 +194,11 @@ a {
 }
 
 .header--burger {
-  display: none;
-  position: relative;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  display: block;
   width: 20px;
   height: 14px;
   background: transparent;
@@ -213,7 +216,7 @@ a {
   justify-content: space-around;
   align-items: center;
   padding-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 119px;
 }
 .main--why .why--container .container--text {
   display: flex;
@@ -263,6 +266,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-right: 112px;
+  margin-left: 121px;
 }
 .main--why .why--container .container--images .images--img2 {
   margin-left: 74px;
@@ -272,11 +276,11 @@ a {
   background-color: #333333;
   position: relative;
 }
-.main--steps img {
+.main--steps .steps--line {
   position: absolute;
   z-index: 1;
-  right: 21.5%;
-  top: 20%;
+  margin-left: 21%;
+  margin-top: 40px;
 }
 .main--steps .steps--container {
   padding-top: 107px;
@@ -526,4 +530,67 @@ a {
 }
 .footer--container .container--svg svg:hover {
   fill: #5373FD;
+}
+
+@media screen and (max-width: 1360px) {
+  .main .main--why .why--container {
+    margin-bottom: 90px;
+  }
+  .main .main--why .why--container .container--text .text--desc {
+    width: 100%;
+  }
+  .main .main--steps .steps--line {
+    margin-left: 21.7%;
+    margin-top: 60px;
+  }
+  .main .main--steps .steps--container {
+    padding-top: 81px;
+    padding-bottom: 44px;
+  }
+  .main .main--steps .steps--container .container--svg svg + svg {
+    margin-left: 252px;
+  }
+  .main .main--booknow .booknow--container {
+    margin-left: auto;
+  }
+  .main .main--booknow .booknow--container .container--card {
+    max-width: 558px;
+  }
+  .main .main--booknowSec .booknowSec--container {
+    margin-left: auto;
+  }
+  .main .main--booknowSec .booknowSec--container .container--card {
+    max-width: 558px;
+  }
+  .main .main--tourist .tourist--container .container--content .content--review .review--text {
+    height: 308px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main--why .why--container {
+    margin-bottom: 90px;
+  }
+  .main--why .why--container .container--images {
+    margin-left: 24px;
+    margin-right: 0;
+  }
+  .main--why .why--container .container--images .images--img2 {
+    margin-left: 36px;
+  }
+  .main--steps .steps--line {
+    margin-left: 19% !important;
+    margin-top: 60px !important;
+  }
+  .main--steps .container--svg svg + svg {
+    margin-left: 192px !important;
+  }
+  .main--booknow .booknow--container .container--card {
+    width: 550px;
+  }
+  .main--booknowSec .booknowSec--container .container--card {
+    width: 550px;
+  }
+  .main--tourist .tourist--container .container--content .content--review .review--text {
+    height: 336px !important;
+  }
 }/*# sourceMappingURL=app.css.map */
