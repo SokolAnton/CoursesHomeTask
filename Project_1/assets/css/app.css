@@ -6,12 +6,15 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
+html {
   scroll-behavior: smooth;
 }
 
-.container, .main--container {
+body {
+  overflow-x: hidden;
+}
+
+.container, .navigation--container {
   max-width: 1320px;
   width: 90%;
   margin: 0 auto;
@@ -34,12 +37,41 @@ a {
   outline-offset: 0;
 }
 
+@media screen and (max-width: 1360px) {
+  .container, .navigation--container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container, .navigation--container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container, .navigation--container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container, .navigation--container {
+    max-width: 540px;
+  }
+}
+@-webkit-keyframes wave {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
 .header--bcg {
   position: absolute;
   z-index: -1;
 }
 .header--container {
   padding-top: 295px;
+  margin-bottom: 120px;
 }
 .header--container .container--data .data--heading {
   font-family: "Josefin Sans";
@@ -49,6 +81,7 @@ a {
   line-height: 52px;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .header--container .container--data .data--subtitle {
   font-family: "Josefin Sans";
@@ -109,41 +142,20 @@ a {
   margin-bottom: 4px;
 }
 
-@media screen and (max-width: 1360px) {
-  .container, .main--container {
-    max-width: 1140px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .container, .main--container {
-    max-width: 960px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container, .main--container {
-    max-width: 720px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container, .main--container {
-    max-width: 540px;
-  }
-}
-.main {
+.navigation {
   position: relative;
-  top: 100px;
   background-color: #5373FD;
   padding: 32px 0;
 }
-.main input {
+.navigation input {
   display: none;
 }
-.main--container .container--wrapper {
+.navigation--container .container--wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.main--container .container--wrapper .wrapper--logo {
+.navigation--container .container--wrapper .wrapper--logo {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
@@ -153,20 +165,17 @@ a {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.main--container .container--wrapper .wrapper--nav .nav--list {
+.navigation--container .container--wrapper .wrapper--nav .nav--list {
   list-style: none;
 }
-.main--container .container--wrapper .wrapper--nav .nav--list li + li {
+.navigation--container .container--wrapper .wrapper--nav .nav--list li + li {
   margin-left: 40px;
 }
-.main--container .container--wrapper .wrapper--nav .nav--list .list--el {
+.navigation--container .container--wrapper .wrapper--nav .nav--list .list--el {
   display: inline-block;
 }
-.main--container .container--wrapper .wrapper--nav .nav--list .list--el .el--link {
+.navigation--container .container--wrapper .wrapper--nav .nav--list .list--el .el--link {
   display: inline-block;
-  transition-duration: 0.3s;
-  transition-property: color;
-  transition-timing-function: ease;
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
@@ -177,8 +186,344 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: all 1s ease;
 }
-.main--container .container--wrapper .wrapper--nav .nav--list .list--el .el--link:hover {
+.navigation--container .container--wrapper .wrapper--nav .nav--list .list--el .el--link:hover {
   color: rgb(255, 217, 217);
   transform: scale(1.1);
+}
+
+.header--burger {
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 14px;
+  background: transparent;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-size: 0;
+}
+
+.main--why .why--bcg {
+  position: absolute;
+  z-index: -1;
+}
+.main--why .why--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 120px;
+  margin-bottom: 120px;
+}
+.main--why .why--container .container--text {
+  display: flex;
+  flex-direction: column;
+  max-width: 648px;
+}
+.main--why .why--container .container--text .text--title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: white;
+  margin-bottom: 24px;
+}
+.main--why .why--container .container--text .text--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.main--why .why--container .container--text .text--butn .butn--link {
+  padding: 20px 32px;
+  background-color: #5373FD;
+  display: inline-flex;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+.main--why .why--container .container--text .text--butn .butn--link:hover {
+  background-color: rgb(255, 217, 217);
+  color: #5373FD;
+}
+.main--why .why--container .container--images {
+  display: flex;
+  flex-direction: column;
+  margin-right: 112px;
+}
+.main--why .why--container .container--images .images--img2 {
+  margin-left: 74px;
+  margin-top: 16px;
+}
+.main--steps {
+  background-color: #333333;
+  position: relative;
+}
+.main--steps img {
+  position: absolute;
+  z-index: 1;
+  right: 21.5%;
+  top: 20%;
+}
+.main--steps .steps--container {
+  padding-top: 107px;
+  padding-bottom: 57px;
+}
+.main--steps .steps--container .container--svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main--steps .steps--container .container--svg svg + svg {
+  margin-left: 351px;
+}
+.main--steps .steps--container .container--svg svg {
+  position: relative;
+  z-index: 2;
+}
+.main--booknow {
+  position: relative;
+}
+.main--booknow img {
+  position: absolute;
+  z-index: -1;
+}
+.main--booknow .booknow--container {
+  padding: 220px 0 120px 0;
+  margin-left: 300px;
+}
+.main--booknow .booknow--container .container--card {
+  max-width: 648px;
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+}
+.main--booknow .booknow--container .container--card .card--title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.main--booknow .booknow--container .container--card .card--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 16px 0;
+}
+.main--booknow .booknow--container .container--card .card--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.main--booknow .booknow--container .container--card .card--butn .butn--link {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-flex;
+  background-color: #5373FD;
+  padding: 20px 56px;
+  transition: all 0.5s ease;
+}
+.main--booknow .booknow--container .container--card .card--butn .butn--link:hover {
+  background-color: rgb(255, 217, 217);
+  color: #5373FD;
+}
+.main--booknowSec {
+  position: relative;
+}
+.main--booknowSec img {
+  position: absolute;
+  z-index: -1;
+}
+.main--booknowSec .booknowSec--container {
+  padding: 220px 0 120px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.main--booknowSec .booknowSec--container .container--card {
+  max-width: 649px;
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+}
+.main--booknowSec .booknowSec--container .container--card .card--title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+.main--booknowSec .booknowSec--container .container--card .card--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 16px 0;
+}
+.main--booknowSec .booknowSec--container .container--card .card--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.main--booknowSec .booknowSec--container .container--card .card--butn .butn--link {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-flex;
+  background-color: #5373FD;
+  padding: 20px 56px;
+  transition: all 0.5s ease;
+}
+.main--booknowSec .booknowSec--container .container--card .card--butn .butn--link:hover {
+  background-color: rgb(255, 217, 217);
+  color: #5373FD;
+}
+.main--tourist {
+  position: relative;
+  margin-bottom: 80px;
+}
+.main--tourist .tourist--bc {
+  position: absolute;
+  z-index: -1;
+}
+.main--tourist .tourist--container {
+  padding-top: 120px;
+}
+.main--tourist .tourist--container .container--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main--tourist .tourist--container .container--content .content--title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.main--tourist .tourist--container .container--content .content--review {
+  display: flex;
+  flex-direction: row;
+  height: 280px;
+}
+.main--tourist .tourist--container .container--content .content--review .review--text {
+  max-width: 885px;
+  padding: 45px 60px;
+  background-color: #333333;
+}
+.main--tourist .tourist--container .container--content .content--review .review--text .text--title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.main--tourist .tourist--container .container--content .content--review .review--text .text--desc {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.footer {
+  position: relative;
+  top: 100px;
+  background-color: #000000;
+}
+.footer svg {
+  fill: white;
+}
+.footer--container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer--container .container--title {
+  margin-bottom: 8px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(255, 0, 0, 0.6) 30%, rgb(255, 0, 0) 50%, rgba(255, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  -webkit-animation: wave 2s infinite;
+          animation: wave 2s infinite;
+}
+.footer--container .container--subtitle {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.footer--container .container--svg svg {
+  transition: all 0.5s ease;
+}
+.footer--container .container--svg svg + svg {
+  margin-left: 32px;
+}
+.footer--container .container--svg svg:hover {
+  fill: #5373FD;
 }/*# sourceMappingURL=app.css.map */
