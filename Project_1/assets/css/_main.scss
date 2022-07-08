@@ -1,0 +1,359 @@
+.main {
+    &--why {
+        background-image: url(../img/WhyBackground-1920.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+
+        .why {
+            &--container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 120px;
+                padding-bottom: 80px;
+
+                .container {
+                    &--text {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 648px;
+
+                        .text {
+                            &--title {
+                                font-family: 'Aleo';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 36px;
+                                line-height: 40px;
+                                text-transform: capitalize;
+                                color: white;
+                                margin-bottom: 24px;
+                            }
+
+                            &--desc {
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 28px;
+                                letter-spacing: 0.1em;
+                                color: #FFFFFF;
+                                margin-bottom: 32px;
+                            }
+
+                            &--butn {
+                                .butn {
+                                    &--link {
+                                        padding: 20px 32px;
+                                        background-color: #5373FD;
+                                        display: inline-flex;
+                                        font-family: 'Aleo';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        text-align: center;
+                                        letter-spacing: 0.07em;
+                                        text-transform: uppercase;
+                                        color: #FFFFFF;
+                                        transition: all .5s ease;
+
+                                        &:hover {
+                                            background-color: rgb(255 217 217);
+                                            color: #5373FD;
+
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    &--images {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 112px;
+                        margin-left: 121px;
+
+                        .images {
+                            &--img2 {
+                                margin-left: 74px;
+                                margin-top: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+   &--steps{
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .steps{
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        &--container{
+            padding-top: 50px;
+            padding-bottom: 60px;
+            .container{
+                &--svg{
+                    .svg{
+                        &--img{
+                            display: flex;
+                            justify-content: center;
+                            .img{
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+   }
+    &--booknow {
+        background-image: url(../img/render-1477041_1280\ 1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        .booknow {
+            &--container {
+                padding: 220px 0 120px 0;
+                margin-left: 300px;
+
+                .container {
+                    &--card {
+                        max-width: 648px;
+                        padding: 44px 32px;
+                        background: rgba(35, 35, 35, 0.9);
+
+                        .card {
+                            &--title {
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 20px;
+                                line-height: 28px;
+                                letter-spacing: 0.1em;
+                                color: #FFFFFF;
+                            }
+
+                            &--subtitle {
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 28px;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                margin: 16px 0;
+
+                            }
+
+                            &--desc {
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 28px;
+                                letter-spacing: 0.1em;
+                                color: #FFFFFF;
+                                margin-bottom: 24px;
+                            }
+
+                            &--butn {
+                                .butn {
+                                    &--link {
+                                        font-family: 'Aleo';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        letter-spacing: 0.07em;
+                                        text-transform: uppercase;
+                                        color: #FFFFFF;
+                                        display: inline-flex;
+                                        background-color: #5373FD;
+                                        padding: 20px 56px;
+                                        transition: all .5s ease;
+
+                                        &:hover {
+                                            background-color: rgb(255 217 217);
+                                            color: #5373FD;
+
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    &--booknowSec {
+        background-image: url(../img/spain-1859434_1280\ 1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+
+        .booknowSec {
+            &--container {
+                padding: 220px 0 120px 0;
+                display: flex;
+                justify-content: flex-end;
+
+                .container {
+                    &--card {
+                        max-width: 649px;
+                        padding: 44px 32px;
+                        background: rgba(35, 35, 35, 0.9);
+
+                        .card {
+                            &--title {
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 20px;
+                                line-height: 28px;
+                                letter-spacing: 0.1em;
+                                color: #FFFFFF;
+                            }
+
+                            &--subtitle {
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 28px;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                margin: 16px 0;
+
+                            }
+
+                            &--desc {
+                                font-family: 'Josefin Sans';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 28px;
+                                letter-spacing: 0.1em;
+                                color: #FFFFFF;
+                                margin-bottom: 24px;
+                            }
+
+                            &--butn {
+                                .butn {
+                                    &--link {
+                                        font-family: 'Aleo';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        letter-spacing: 0.07em;
+                                        text-transform: uppercase;
+                                        color: #FFFFFF;
+                                        display: inline-flex;
+                                        background-color: #5373FD;
+                                        padding: 20px 56px;
+                                        transition: all .5s ease;
+
+                                        &:hover {
+                                            background-color: rgb(255 217 217);
+                                            color: #5373FD;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    &--tourist {
+        background-image: url(../img/bcgT.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        .tourist {
+            &--container {
+                padding-top: 120px;
+                padding-bottom: 180px;
+
+                .container {
+                    &--content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .content {
+                            &--title {
+                                font-family: 'Aleo';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 36px;
+                                line-height: 40px;
+                                text-align: center;
+                                text-transform: capitalize;
+                                color: #FFFFFF;
+                                margin-bottom: 60px;
+                            }
+
+                            &--review {
+                                display: flex;
+                                flex-direction: row;
+                                height: 280px;
+
+                                .review {
+                                    &--text {
+                                        max-width: 885px;
+                                        padding: 45px 60px;
+                                        background-color: #333333;
+
+                                        .text {
+                                            &--title {
+                                                font-family: 'Josefin Sans';
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 20px;
+                                                line-height: 28px;
+                                                text-transform: uppercase;
+                                                color: #FFFFFF;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            &--desc {
+                                                font-family: 'Josefin Sans';
+                                                font-style: normal;
+                                                font-weight: 300;
+                                                font-size: 16px;
+                                                line-height: 28px;
+                                                letter-spacing: 0.1em;
+                                                color: #FFFFFF;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

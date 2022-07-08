@@ -8,8 +8,6 @@
         justify-content: center;
         text-align: center;
         padding-top: 200px;
-        // padding-bottom: 120px;
-
         .container {
             &--data {
                 .data {
@@ -69,7 +67,7 @@
                             border: none;
                             outline: none;
                             cursor: pointer;
-
+                            
                             svg {
                                 margin-right: 12px;
                             }
