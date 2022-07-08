@@ -2,9 +2,10 @@ body {
   font-family: sans-serif;
   background: linear-gradient(purple, black);
   color: white;
- 
+
 }
-.HTnum{
+
+.HTnum {
   padding: 5px 0;
   width: 100%;
   height: 30px;
@@ -13,42 +14,49 @@ body {
   justify-content: space-around;
   text-align: center;
   align-items: center;
- 
+
 }
-.Num{
+
+.Num {
   padding: 5px 5px;
   width: 220px;
   border-right: 5px solid #912c98;
   border-left: 5px solid #912c98;
-  border-radius: 10px ;
+  border-radius: 10px;
   font-size: 10px;
   font-weight: bold;
   background-color: #912c98;
 }
-.SecNum{
+
+.SecNum {
   display: none;
 }
-.FirstPart{
+
+.FirstPart {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .wrap {
   width: 200px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
+
 .card {
   width: 200px;
   height: 200px;
   position: relative;
   perspective: 1000px;
 }
-.front, .back {
+
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -61,43 +69,88 @@ body {
   backface-visibility: hidden;
   border-radius: 10px;
 }
+
 .front {
   background-color: #fff;
 }
+
 .back {
   background-color: #79b8c4;
   transform: rotateY(180deg);
 }
-.card:hover .front {transform: rotateY(180deg);}
-.card:hover .back {transform: rotateY(360deg);}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(360deg);
+}
 
 
 @media screen and (max-width: 800px) {
-.FirstPart{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  .FirstPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .wrap {
+    padding: 15px;
+    margin: 12px;
+  }
+
+  .HTnum {
+    border: none;
+    flex-direction: column;
+  }
+
+  .Num {
+    background-color: #BBDEFB;
+    border-color: #BBDEFB;
+    margin-top: 250px;
+    position: relative;
+    top: 400px;
+
+    flex-direction: column;
+  }
+
+  .MainPart {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 }
-.wrap{
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.header-link {
   padding: 15px;
-  margin: 12px;
+  width: 200px;
+  height: 50px;
+  background-image: linear-gradient(to left, violet, red);
+
+  text-align: center;
 }
-.HTnum{
-  border: none;
-  flex-direction: column;
+
+.header-link a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(255, 0, 0, 0.6) 30%, rgb(255, 0, 0) 50%, rgba(255, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: wave 2s infinite;
 }
-.Num{
-  background-color: #BBDEFB;
-  border-color: #BBDEFB ;
-  margin-top: 250px;
-  position: relative;
-  top: 400px;
-  
-  flex-direction: column;
-}
-.MainPart{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
+@-webkit-keyframes wave {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
 }

@@ -54,8 +54,6 @@ a{
 @include maxWidth($mobile) {
     .container {
         max-width: 540px;
-
-
     }
 }
 @-webkit-keyframes wave {

@@ -186,19 +186,7 @@
 }
 
 
-.header--burger {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    top: 0;
-    display: block;
-    width: 20px;
-    height: 14px;
-    background: transparent;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    font-size: 0;
-}
+
 
 
 .main {
@@ -301,7 +289,7 @@
             &--line {
                 position: absolute;
                 z-index: 1;
-                margin-left: 21%;
+                margin-left: 26.8%;
                 margin-top: 40px;
             }
 
@@ -649,7 +637,7 @@
             &--why {
                 .why {
                     &--container {
-                        margin-bottom: 90px;
+                        margin-bottom: 20px;
 
                         .container {
                             &--text {
@@ -786,36 +774,267 @@
 
                     .container {
                         &--card {
-                            width:550px;
+                            width: 550px;
                         }
                     }
                 }
             }
         }
+
         &--booknowSec {
             .booknowSec {
                 &--container {
 
                     .container {
                         &--card {
-                            width:550px;
+                            width: 550px;
                         }
                     }
                 }
             }
         }
-        &--tourist{
-            .tourist{
-                &--container{
-                    .container{
-                        &--content{
-                            .content{
-                                &--review{
-                                    .review{
-                                        &--text{
+
+        &--tourist {
+            .tourist {
+                &--container {
+                    .container {
+                        &--content {
+                            .content {
+                                &--review {
+                                    .review {
+                                        &--text {
                                             height: 336px !important;
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:$tablet) {
+    .header {
+        .navigation {
+            &--container {
+                .container {
+                    &--wrapper {
+                        display: flex;
+                        flex-direction: column;
+
+                        .wrapper {
+                            &--logo {
+                                margin-bottom: 32px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .main {
+        &--why {
+            .why {
+                &--container {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    padding-top: 60px;
+                    margin-bottom: 100px;
+
+                    .container {
+                        &--images {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-bottom: 32px;
+                            margin-right: 18px;
+
+                            .images {
+                                &--img2 {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+
+                        &--text {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            max-width: 720px;
+                            margin-bottom: 24px;
+
+                            .text {
+                                &--desc {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--steps {
+            .steps {
+                &--line {
+                    display: none;
+                }
+
+                &--container {
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+
+                    .container {
+                        &--svg {
+                            svg {
+                                margin-left: 0;
+                                margin-bottom: 103px;
+                            }
+
+                            .svg {
+                                &--img {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &--booknow {
+            .booknow {
+                &--container {
+                    padding: 120px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .container {
+                        &--card {
+                            height: 348px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--booknowSec {
+            .booknowSec {
+                &--container {
+                    padding: 120px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .container {
+                        &--card {}
+                    }
+                }
+            }
+        }
+
+        &--tourist {
+            .tourist {
+                &--container {
+                    .container {
+                        &--content {
+                            display: flex;
+                            flex-direction: column;
+
+                            .content {
+                                &--review {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-bottom: 240px;
+
+                                    .review {
+                                        &--text {
+                                            .text {
+                                                height: 338px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and(max-width:$mobile) {
+    .header {
+        &--container {
+            .container {
+                &--data {
+                    .data {
+                        &--search {
+                            max-width: 540px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navigation {
+            &--container {
+                .container {
+                    &--wrapper {
+                        .wrapper {
+                            &--nav {
+                                display: none;
+                            }
+
+                            &--logo {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        --why {
+            .why {
+                &--container {
+                    .container {
+                        &--text{
+                            .text{
+                                &--title{
+                                    margin-bottom: 19px;
+                                }
+                            }
+                        }
+                        &--images {
+                            margin-bottom: 37px;
+                            .images {
+                                &--img2 {
+                                }
+                            }
+                        }
+
+                        &--text {
+
+                            .text {
+                                &--desc {
+                                    
                                 }
                             }
                         }
