@@ -152,6 +152,7 @@
   background-image: url(../img/WhyBackground-1920.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
 }
 .main--why .why--container {
@@ -159,7 +160,7 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 .main--why .why--container .container--text {
   display: flex;
@@ -698,10 +699,6 @@ a {
   .header--container .container--data .data--search {
     width: 67%;
   }
-  .main--why .why--container .container--images {
-    margin-left: 24px;
-    margin-right: 0;
-  }
   .main--why .why--container .container--images .images--img2 {
     margin-left: 36px;
   }
@@ -729,6 +726,7 @@ a {
   }
 
   .main--why .why--container {
+    max-width: 720px;
     display: flex;
     flex-direction: column-reverse;
     padding-top: 45px;
@@ -739,7 +737,6 @@ a {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 32px;
-    margin-right: 18px;
   }
   .main--why .why--container .container--images .images--img2 {
     margin-top: 0;

@@ -3,6 +3,7 @@
         background-image: url(../img/WhyBackground-1920.png);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
 
         .why {
@@ -11,7 +12,7 @@
                 justify-content: space-around;
                 align-items: center;
                 padding-top: 120px;
-                padding-bottom: 80px;
+                padding-bottom: 120px;
 
                 .container {
                     &--text {

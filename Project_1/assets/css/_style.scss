@@ -27,8 +27,6 @@
             &--why {
                 .why {
                     &--container {
-                        // margin-bottom: 20px;
-
                         .container {
                             &--text {
                                 .text {
@@ -133,8 +131,6 @@
 
                     .container {
                         &--images {
-                            margin-left: 24px;
-                            margin-right: 0;
 
                             .images {
                                 &--img2 {
@@ -242,6 +238,7 @@
         &--why {
             .why {
                 &--container {
+                    max-width: 720px;
                     display: flex;
                     flex-direction: column-reverse;
                     padding-top: 45px;
@@ -253,7 +250,7 @@
                             justify-content: space-around;
                             align-items: center;
                             margin-bottom: 32px;
-                            margin-right: 18px;
+                            // margin-right: 18px;
 
                             .images {
                                 &--img2 {
