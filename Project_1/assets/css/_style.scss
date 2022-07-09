@@ -17,7 +17,7 @@
             &--why {
                 .why {
                     &--container {
-                        margin-bottom: 20px;
+                        // margin-bottom: 20px;
 
                         .container {
                             &--text {
@@ -35,15 +35,7 @@
 
             &--steps {
                 .steps {
-                    &--line {
-                        margin-left: 21.7%;
-                        margin-top: 60px;
-                    }
-
                     &--container {
-                        padding-top: 81px;
-                        padding-bottom: 44px;
-
                         .container {
                             &--svg {
                                 svg+svg {
@@ -93,7 +85,6 @@
                                     &--review {
                                         .review {
                                             &--text {
-                                                height: 308px;
                                             }
                                         }
                                     }
@@ -113,7 +104,6 @@
         &--why {
             .why {
                 &--container {
-                    margin-bottom: 90px;
 
                     .container {
                         &--images {
@@ -177,13 +167,13 @@
         &--tourist {
             .tourist {
                 &--container {
+                padding-top: 50px;
                     .container {
                         &--content {
                             .content {
                                 &--review {
                                     .review {
                                         &--text {
-                                            height: 336px !important;
                                         }
                                     }
                                 }
@@ -224,8 +214,7 @@
                 &--container {
                     display: flex;
                     flex-direction: column-reverse;
-                    padding-top: 60px;
-                    margin-bottom: 100px;
+                    padding-top: 45px;
 
                     .container {
                         &--images {
@@ -316,10 +305,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    .container {
-                        &--card {}
-                    }
                 }
             }
         }
@@ -327,6 +312,8 @@
         &--tourist {
             .tourist {
                 &--container {
+                    padding-top: 0;
+                    padding-bottom: 0;
                     .container {
                         &--content {
                             display: flex;
@@ -336,12 +323,12 @@
                                 &--review {
                                     display: flex;
                                     flex-direction: column;
-                                    margin-bottom: 240px;
+                                    // margin-bottom: 240px;
 
                                     .review {
                                         &--text {
                                             .text {
-                                                height: 338px;
+                                                margin-bottom: 120px;
                                             }
                                         }
                                     }
