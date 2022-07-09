@@ -2,14 +2,22 @@
     background-image: url(../img/HeaderBackground.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+
     &--container {
         display: flex;
         justify-content: center;
         text-align: center;
-        padding-top: 200px;
+        padding-top: 290px;
+
         .container {
             &--data {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 .data {
                     &--heading {
                         font-family: 'Josefin Sans';
@@ -19,8 +27,7 @@
                         line-height: 52px;
                         text-transform: uppercase;
                         color: #FFFFFF;
-                        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-
+                        margin-bottom: 8px;
 
                     }
 
@@ -37,17 +44,17 @@
                     }
 
                     &--search {
+                        width: 49%;
                         padding: 4px 5px;
                         background-color: white;
-                        margin-bottom: 211px;
-                        width: 647px;
+                        margin-bottom: 208px;
                         display: flex;
                         justify-content: space-between;
 
 
                         input {
-                            padding: 0 36px 0 31px;
                             width: 100%;
+                            padding: 0 36px 0 31px;
                             border: none;
                             font-family: 'Josefin Sans';
                             font-style: normal;
@@ -67,7 +74,7 @@
                             border: none;
                             outline: none;
                             cursor: pointer;
-                            
+
                             svg {
                                 margin-right: 12px;
                             }
@@ -131,7 +138,7 @@
                         font-style: normal;
                         font-weight: 700;
                         font-size: 24px;
-                        line-height: 28px;
+                        line-height: 20px;
                         letter-spacing: 0.1em;
                         text-transform: uppercase;
                         color: #FFFFFF;

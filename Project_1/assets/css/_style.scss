@@ -12,6 +12,16 @@
 
 
 @media screen and (max-width:$middle-desktop) {
+    .header {
+        &--container {
+            .container {
+                &--data {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .main {
         .main {
             &--why {
@@ -84,8 +94,7 @@
                                 .content {
                                     &--review {
                                         .review {
-                                            &--text {
-                                            }
+                                            &--text {}
                                         }
                                     }
                                 }
@@ -100,6 +109,23 @@
 }
 
 @media screen and (max-width:$small-desktop) {
+    .header {
+        &--container {
+            .container {
+                &--data {
+                    .data {
+                        &--search {
+                            width: 67%;
+                            input {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .main {
         &--why {
             .why {
@@ -123,19 +149,10 @@
 
         &--steps {
             .steps {
-                &--line {
-                    margin-left: 19% !important;
-                    margin-top: 60px !important;
-                }
+                &--line {}
             }
 
-            .container {
-                &--svg {
-                    svg+svg {
-                        margin-left: 192px !important;
-                    }
-                }
-            }
+            .container {}
         }
 
         &--booknow {
@@ -167,14 +184,14 @@
         &--tourist {
             .tourist {
                 &--container {
-                padding-top: 50px;
+                    padding-top: 50px;
+
                     .container {
                         &--content {
                             .content {
                                 &--review {
                                     .review {
-                                        &--text {
-                                        }
+                                        &--text {}
                                     }
                                 }
                             }
@@ -189,24 +206,37 @@
 
 @media screen and (max-width:$tablet) {
     .header {
-        .navigation {
-            &--container {
-                .container {
-                    &--wrapper {
-                        display: flex;
-                        flex-direction: column;
-
-                        .wrapper {
-                            &--logo {
-                                margin-bottom: 32px;
-                            }
+        &--container {
+            .container {
+                &--data {
+                    .data{
+                        &--search{
+                            width: 100%;
                         }
                     }
-
+                    }
                 }
             }
         }
+
+    .navigation {
+        &--container {
+            .container {
+                &--wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    .wrapper {
+                        &--logo {
+                            margin-bottom: 32px;
+                        }
+                    }
+                }
+
+            }
+        }
     }
+
 
     .main {
         &--why {
@@ -314,6 +344,7 @@
                 &--container {
                     padding-top: 0;
                     padding-bottom: 0;
+
                     .container {
                         &--content {
                             display: flex;
@@ -357,7 +388,7 @@
                 }
             }
         }
-
+    }
         .navigation {
             &--container {
                 .container {
@@ -382,25 +413,24 @@
             .why {
                 &--container {
                     .container {
-                        &--text{
-                            .text{
-                                &--title{}
+                        &--text {
+                            .text {
+                                &--title {}
                             }
                         }
+
                         &--images {
                             margin-bottom: 37px;
+
                             .images {
-                                &--img2 {
-                                }
+                                &--img2 {}
                             }
                         }
 
                         &--text {
 
                             .text {
-                                &--desc {
-                                    
-                                }
+                                &--desc {}
                             }
                         }
                     }
@@ -408,4 +438,3 @@
             }
         }
     }
-}

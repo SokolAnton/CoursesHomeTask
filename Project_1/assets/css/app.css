@@ -2,13 +2,20 @@
   background-image: url(../img/HeaderBackground.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
 }
 .header--container {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 290px;
+}
+.header--container .container--data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header--container .container--data .data--heading {
   font-family: "Josefin Sans";
@@ -18,7 +25,7 @@
   line-height: 52px;
   text-transform: uppercase;
   color: #FFFFFF;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  margin-bottom: 8px;
 }
 .header--container .container--data .data--subtitle {
   font-family: "Josefin Sans";
@@ -32,16 +39,16 @@
   margin-bottom: 48px;
 }
 .header--container .container--data .data--search {
+  width: 49%;
   padding: 4px 5px;
   background-color: white;
-  margin-bottom: 211px;
-  width: 647px;
+  margin-bottom: 208px;
   display: flex;
   justify-content: space-between;
 }
 .header--container .container--data .data--search input {
-  padding: 0 36px 0 31px;
   width: 100%;
+  padding: 0 36px 0 31px;
   border: none;
   font-family: "Josefin Sans";
   font-style: normal;
@@ -99,7 +106,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -245,6 +252,7 @@
   max-width: 648px;
   padding: 44px 32px;
   background: rgba(35, 35, 35, 0.9);
+  margin-right: 672px;
 }
 .main--booknow .booknow--container .container--card .card--title {
   font-family: "Josefin Sans";
@@ -389,7 +397,7 @@
 }
 .main--tourist .tourist--container .container--content .content--review .review--text {
   max-width: 885px;
-  padding: 45px 60px;
+  padding: 35px 60px;
   background-color: #333333;
 }
 .main--tourist .tourist--container .container--content .content--review .review--text .text--title {
@@ -663,6 +671,10 @@ a {
 }
 
 @media screen and (max-width: 1360px) {
+  .header--container .container--data {
+    width: 100%;
+  }
+
   .main .main--why .why--container .container--text .text--desc {
     width: 100%;
   }
@@ -683,19 +695,15 @@ a {
   }
 }
 @media screen and (max-width: 1024px) {
+  .header--container .container--data .data--search {
+    width: 67%;
+  }
   .main--why .why--container .container--images {
     margin-left: 24px;
     margin-right: 0;
   }
   .main--why .why--container .container--images .images--img2 {
     margin-left: 36px;
-  }
-  .main--steps .steps--line {
-    margin-left: 19% !important;
-    margin-top: 60px !important;
-  }
-  .main--steps .container--svg svg + svg {
-    margin-left: 192px !important;
   }
   .main--booknow .booknow--container .container--card {
     width: 550px;
@@ -708,11 +716,15 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  .header .navigation--container .container--wrapper {
+  .header--container .container--data .data--search {
+    width: 100%;
+  }
+
+  .navigation--container .container--wrapper {
     display: flex;
     flex-direction: column;
   }
-  .header .navigation--container .container--wrapper .wrapper--logo {
+  .navigation--container .container--wrapper .wrapper--logo {
     margin-bottom: 32px;
   }
 
@@ -793,14 +805,14 @@ a {
   .header--container .container--data .data--search {
     max-width: 540px;
   }
-  .header .navigation--container .container--wrapper .wrapper--nav {
+
+  .navigation--container .container--wrapper .wrapper--nav {
     display: none;
   }
-  .header .navigation--container .container--wrapper .wrapper--logo {
+  .navigation--container .container--wrapper .wrapper--logo {
     margin-bottom: 0;
   }
-
-  .main --why .why--container .container--images {
-    margin-bottom: 37px;
-  }
+}
+.main --why .why--container .container--images {
+  margin-bottom: 37px;
 }/*# sourceMappingURL=app.css.map */
