@@ -615,7 +615,7 @@
 .footer--container .container--svg svg {
   transition: all 0.5s ease;
 }
-.footer--container .container--svg svg + svg {
+.footer--container .container--svg a + a {
   margin-left: 32px;
 }
 .footer--container .container--svg svg:hover {
@@ -787,8 +787,13 @@ a {
     flex-direction: row;
     margin-bottom: 32px;
   }
+  .main--why .why--container .container--images .images--img1 img {
+    width: 100%;
+  }
   .main--why .why--container .container--images .images--img2 {
     margin-top: 0;
+  }
+  .main--why .why--container .container--images .images--img2 img {
     width: 100%;
   }
   .main--why .why--container .container--text {
