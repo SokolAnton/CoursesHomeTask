@@ -209,8 +209,6 @@
 .main--why .why--container .container--images {
   display: flex;
   flex-direction: column;
-  margin-right: 112px;
-  margin-left: 121px;
 }
 .main--why .why--container .container--images .images--img2 {
   margin-left: 74px;
@@ -237,23 +235,21 @@
 }
 .main--steps .steps--container .container--svg .svg--img {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .main--booknow {
   background-image: url(../img/render-1477041_1280\ 1.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
 }
 .main--booknow .booknow--container {
-  padding: 220px 0 90px 0;
-  margin-left: 300px;
+  padding: 220px 0 120px 0;
 }
 .main--booknow .booknow--container .container--card {
-  max-width: 648px;
+  width: 49.2%;
   padding: 44px 32px;
   background: rgba(35, 35, 35, 0.9);
-  margin-right: 672px;
 }
 .main--booknow .booknow--container .container--card .card--title {
   font-family: "Josefin Sans";
@@ -297,6 +293,8 @@
   background-color: #5373FD;
   padding: 20px 56px;
   transition: all 0.5s ease;
+  width: 36.5%;
+  max-width: 213px;
 }
 .main--booknow .booknow--container .container--card .card--butn .butn--link:hover {
   background-color: rgb(255, 217, 217);
@@ -306,15 +304,15 @@
   background-image: url(../img/spain-1859434_1280\ 1.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
 }
 .main--booknowSec .booknowSec--container {
-  padding: 220px 0 90px 0;
+  padding: 220px 0 120px 0;
   display: flex;
   justify-content: flex-end;
 }
 .main--booknowSec .booknowSec--container .container--card {
-  max-width: 649px;
+  width: 49.2%;
   padding: 44px 32px;
   background: rgba(35, 35, 35, 0.9);
 }
@@ -360,6 +358,8 @@
   background-color: #5373FD;
   padding: 20px 56px;
   transition: all 0.5s ease;
+  width: 36.5%;
+  max-width: 213px;
 }
 .main--booknowSec .booknowSec--container .container--card .card--butn .butn--link:hover {
   background-color: rgb(255, 217, 217);
@@ -369,7 +369,7 @@
   background-image: url(../img/BG1920.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
 }
 .main--tourist .tourist--container {
   padding-top: 110px;
@@ -447,7 +447,7 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
+  background-color: white;
   transition-duration: 0.25s;
 }
 
@@ -686,13 +686,13 @@ a {
     margin-left: auto;
   }
   .main .main--booknow .booknow--container .container--card {
-    max-width: 558px;
+    width: 48.9%;
   }
   .main .main--booknowSec .booknowSec--container {
     margin-left: auto;
   }
   .main .main--booknowSec .booknowSec--container .container--card {
-    max-width: 558px;
+    width: 48.9%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -703,10 +703,10 @@ a {
     margin-left: 36px;
   }
   .main--booknow .booknow--container .container--card {
-    width: 550px;
+    width: 57.2% !important;
   }
   .main--booknowSec .booknowSec--container .container--card {
-    width: 550px;
+    width: 57.2% !important;
   }
   .main--tourist .tourist--container {
     padding-top: 50px;
@@ -730,16 +730,16 @@ a {
     display: flex;
     flex-direction: column-reverse;
     padding-top: 45px;
+    padding-bottom: 60px;
   }
   .main--why .why--container .container--images {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     margin-bottom: 32px;
   }
   .main--why .why--container .container--images .images--img2 {
     margin-top: 0;
+    width: 100%;
   }
   .main--why .why--container .container--text {
     display: flex;
@@ -774,13 +774,16 @@ a {
     align-items: center;
   }
   .main--booknow .booknow--container .container--card {
-    height: 348px;
+    width: 100% !important;
   }
   .main--booknowSec .booknowSec--container {
     padding: 120px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .main--booknowSec .booknowSec--container .container--card {
+    width: 100% !important;
   }
   .main--tourist .tourist--container {
     padding-top: 0;
@@ -810,6 +813,12 @@ a {
     margin-bottom: 0;
   }
 }
-.main --why .why--container .container--images {
+.main--why .why--container .container--images {
   margin-bottom: 37px;
+}
+.main--booknowSec .booknowSec--container .container--card .card--butn .butn--link {
+  width: 48%;
+}
+.main--booknow .booknow--container .container--card .card--butn .butn--link {
+  width: 48%;
 }/*# sourceMappingURL=app.css.map */

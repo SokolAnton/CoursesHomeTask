@@ -75,8 +75,6 @@
                     &--images {
                         display: flex;
                         flex-direction: column;
-                        margin-right: 112px;
-                        margin-left: 121px;
 
                         .images {
                             &--img2 {
@@ -91,30 +89,38 @@
         }
     }
 
-   &--steps{
-    background-color: #333333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
-    .steps{
-        &--line{
-            position: absolute;
-            z-index: 0;
-        }
-        &--container{
-            padding-top: 50px;
-            padding-bottom: 60px;
-            .container{
-                &--svg{
-                    position: relative;
-                    z-index: 1;
-                    .svg{
-                        &--img{
-                            display: flex;
-                            justify-content: center;
-                            .img{
-                            
+    &--steps {
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+
+        .steps {
+            &--line {
+                position: absolute;
+                z-index: 0;
+            }
+
+            &--container {
+                padding-top: 50px;
+                padding-bottom: 60px;
+
+                .container {
+                    &--svg {
+                        position: relative;
+                        z-index: 1;
+
+                        .svg {
+                            &--img {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .img {
+                                    &--check {
+                                        
+                                    }
+                                }
                             }
                         }
                     }
@@ -122,23 +128,22 @@
             }
         }
     }
-   }
+
     &--booknow {
         background-image: url(../img/render-1477041_1280\ 1.png);
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        background-size: cover;
+
         .booknow {
             &--container {
-                padding: 220px 0 90px 0;
-                margin-left: 300px;
+                padding: 220px 0 120px 0;
 
                 .container {
                     &--card {
-                        max-width: 648px;
+                        width: 49.2%;
                         padding: 44px 32px;
                         background: rgba(35, 35, 35, 0.9);
-                        margin-right: 672px;
 
                         .card {
                             &--title {
@@ -189,6 +194,8 @@
                                         background-color: #5373FD;
                                         padding: 20px 56px;
                                         transition: all .5s ease;
+                                        width: 36.5%;
+                                        max-width: 213px;
 
                                         &:hover {
                                             background-color: rgb(255 217 217);
@@ -211,17 +218,19 @@
         background-image: url(../img/spain-1859434_1280\ 1.png);
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        background-size: cover;
+
 
         .booknowSec {
             &--container {
-                padding: 220px 0 90px 0;
+                padding: 220px 0 120px 0;
                 display: flex;
                 justify-content: flex-end;
 
                 .container {
                     &--card {
-                        max-width: 649px;
+                        width: 49.2%;
+
                         padding: 44px 32px;
                         background: rgba(35, 35, 35, 0.9);
 
@@ -274,6 +283,9 @@
                                         background-color: #5373FD;
                                         padding: 20px 56px;
                                         transition: all .5s ease;
+                                        width: 36.5%;
+                                        max-width: 213px;
+
 
                                         &:hover {
                                             background-color: rgb(255 217 217);
@@ -295,7 +307,8 @@
         background-image: url(../img/BG1920.png);
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        background-size: cover;
+
         .tourist {
             &--container {
                 padding-top: 110px;
