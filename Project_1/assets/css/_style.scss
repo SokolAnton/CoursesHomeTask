@@ -202,6 +202,12 @@
 
 
 @media screen and (max-width:$tablet) {
+    .check+.check{
+        margin-left: 0;
+    }
+    .check {
+        margin-bottom: 59px;
+    }
     .header {
         &--container {
             .container {
@@ -290,8 +296,7 @@
                     .container {
                         &--svg {
                             svg {
-                                margin-left: 0;
-                                margin-bottom: 103px;
+                                margin-bottom: 4px;
                             }
 
                             .svg {
@@ -345,8 +350,6 @@
         &--tourist {
             .tourist {
                 &--container {
-                    padding-top: 0;
-                    padding-bottom: 0;
 
                     .container {
                         &--content {
@@ -357,15 +360,6 @@
                                 &--review {
                                     display: flex;
                                     flex-direction: column;
-                                    // margin-bottom: 240px;
-
-                                    .review {
-                                        &--text {
-                                            .text {
-                                                margin-bottom: 120px;
-                                            }
-                                        }
-                                    }
                                 }
                             }
                         }
@@ -451,7 +445,7 @@
                             &--butn {
                                 .butn {
                                     &--link {
-                                        width: 48%;
+                                        width: 100%;
                                     }
                                 }
                             }
@@ -471,7 +465,7 @@
                                 &--butn {
                                     .butn {
                                         &--link {
-                                            width: 48%;
+                                            width: 100%;
 
                                         }
                                     }

@@ -232,10 +232,28 @@
 .main--steps .steps--container .container--svg {
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 .main--steps .steps--container .container--svg .svg--img {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+}
+.main--steps .steps--container .container--svg .svg--img .img--check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main--steps .steps--container .container--svg .svg--img .img--check p {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
 }
 .main--booknow {
   background-image: url(../img/render-1477041_1280\ 1.png);
@@ -372,8 +390,8 @@
   background-size: cover;
 }
 .main--tourist .tourist--container {
-  padding-top: 110px;
-  padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 180px;
 }
 .main--tourist .tourist--container .container--content {
   display: flex;
@@ -409,7 +427,7 @@
   line-height: 28px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .main--tourist .tourist--container .container--content .content--review .review--text .text--desc {
   font-family: "Josefin Sans";
@@ -419,6 +437,10 @@
   line-height: 28px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
+}
+
+.check + .check {
+  margin-left: 220px;
 }
 
 .burger--wrapper {
@@ -634,7 +656,9 @@ a {
   color: black;
 }
 
-:active, :hover, :focus {
+:active,
+:hover,
+:focus {
   outline: 0;
   outline-offset: 0;
 }
@@ -657,6 +681,24 @@ a {
 @media screen and (max-width: 576px) {
   .container, .navigation--container {
     max-width: 540px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main--tourist img {
+    width: 100%;
+  }
+  .main--tourist .tourist--container .container--content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main--tourist .tourist--container .container--content .content--review {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main--booknowSec .booknowSec--container .container--card .card--butn .butn--link {
+    width: 100%;
   }
 }
 @-webkit-keyframes wave {
@@ -713,6 +755,14 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
+  .check + .check {
+    margin-left: 0;
+  }
+
+  .check {
+    margin-bottom: 59px;
+  }
+
   .header--container .container--data .data--search {
     width: 100%;
   }
@@ -759,8 +809,7 @@ a {
     padding-bottom: 60px;
   }
   .main--steps .steps--container .container--svg svg {
-    margin-left: 0;
-    margin-bottom: 103px;
+    margin-bottom: 4px;
   }
   .main--steps .steps--container .container--svg .svg--img {
     display: flex;
@@ -785,10 +834,6 @@ a {
   .main--booknowSec .booknowSec--container .container--card {
     width: 100% !important;
   }
-  .main--tourist .tourist--container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .main--tourist .tourist--container .container--content {
     display: flex;
     flex-direction: column;
@@ -796,9 +841,6 @@ a {
   .main--tourist .tourist--container .container--content .content--review {
     display: flex;
     flex-direction: column;
-  }
-  .main--tourist .tourist--container .container--content .content--review .review--text .text {
-    margin-bottom: 120px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -817,8 +859,8 @@ a {
   margin-bottom: 37px;
 }
 .main--booknowSec .booknowSec--container .container--card .card--butn .butn--link {
-  width: 48%;
+  width: 100%;
 }
 .main--booknow .booknow--container .container--card .card--butn .butn--link {
-  width: 48%;
+  width: 100%;
 }/*# sourceMappingURL=app.css.map */

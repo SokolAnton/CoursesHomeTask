@@ -1,33 +1,41 @@
 *,
 ::after,
-::before{
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 
 }
-body{
-    overflow-x:hidden;
+
+body {
+    overflow-x: hidden;
 }
-.container{
+
+.container {
     max-width: 1320px;
     width: 90%;
     margin: 0 auto;
 }
-.d-flex-center-center-column{
+
+.d-flex-center-center-column {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-:active, :hover, :focus {
+
+:active,
+:hover,
+:focus {
     outline: 0;
     outline-offset: 0;
 }
@@ -56,19 +64,74 @@ a{
         max-width: 540px;
     }
 }
-@-webkit-keyframes wave {
-  from {
-    -webkit-mask-position: 150%;
-  }
-  to {
-    -webkit-mask-position: -50%;
-  }
+
+@include maxWidth(950px) {
+    .main {
+        &--tourist {
+            img {
+                width: 100%;
+            }
+
+            .tourist {
+                &--container {
+
+                    .container {
+                        &--content {
+                            display: flex;
+                            flex-direction: column;
+
+                            .content {
+                                &--review {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.m-left187{
+@media screen and (max-width:375px) {
+    .main {
+        &--booknowSec {
+            .booknowSec {
+                &--container {
+                    .container {
+                        &--card {
+                            .card{
+                                &--butn{
+                                    .butn{
+                                        &--link{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes wave {
+    from {
+        -webkit-mask-position: 150%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.m-left187 {
     margin-left: 353px;
 }
 
-.tourist--bc{
+.tourist--bc {
     // width: 100%;
 }

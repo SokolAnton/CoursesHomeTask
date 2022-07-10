@@ -110,15 +110,31 @@
                     &--svg {
                         position: relative;
                         z-index: 1;
+                        display: flex;
+                        justify-content: center;
 
                         .svg {
                             &--img {
                                 display: flex;
                                 justify-content: space-between;
+                                margin: 0 auto;
 
                                 .img {
                                     &--check {
-                                        
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+
+                                        p {
+                                            font-family: 'Aleo';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 36px;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-transform: capitalize;
+                                            color: #FFFFFF;
+                                        }
                                     }
                                 }
                             }
@@ -311,8 +327,8 @@
 
         .tourist {
             &--container {
-                padding-top: 110px;
-                padding-bottom: 120px;
+                padding-top: 120px;
+                padding-bottom: 180px;
 
                 .container {
                     &--content {
@@ -353,7 +369,7 @@
                                                 line-height: 28px;
                                                 text-transform: uppercase;
                                                 color: #FFFFFF;
-                                                margin-bottom: 10px;
+                                                margin-bottom: 8px;
                                             }
 
                                             &--desc {
@@ -375,4 +391,10 @@
             }
         }
     }
+}
+
+
+
+.check+.check{
+    margin-left: 220px;
 }
