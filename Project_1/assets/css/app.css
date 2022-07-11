@@ -157,7 +157,7 @@
 }
 .main--why .why--container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -484,16 +484,14 @@
 }
 
 .menubox {
-  display: block;
-  display: none;
   visibility: hidden;
   position: relative;
-  right: -100%;
+  top: -100%;
   width: 576px;
   margin: 0;
   padding: 60px 0;
   list-style: none;
-  transition-duration: 0.25s;
+  transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -535,6 +533,10 @@
   color: #FFFFFF;
   margin-top: 24px;
   transition-duration: 0.25s;
+}
+
+.menu-item {
+  transition: all 0.15s ease;
 }
 
 .menu-item:hover {
@@ -684,6 +686,9 @@ a {
   }
 }
 @media screen and (max-width: 950px) {
+  .check + .check {
+    margin-left: 0 !important;
+  }
   .main--tourist img {
     width: 100%;
   }
@@ -694,6 +699,33 @@ a {
   .main--tourist .tourist--container .container--content .content--review {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main--steps {
+    padding-top: 0;
+  }
+  .main--steps .steps--line {
+    display: none;
+  }
+  .main--steps .steps--container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main--steps .steps--container .container--svg svg {
+    margin-bottom: 4px;
+  }
+  .main--steps .steps--container .container--svg .svg--img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation--container .container--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation--container .container--wrapper .wrapper--logo {
+    margin-bottom: 32px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -709,15 +741,10 @@ a {
     -webkit-mask-position: -50%;
   }
 }
-.m-left187 {
-  margin-left: 353px;
-}
-
 @media screen and (max-width: 1360px) {
   .header--container .container--data {
     width: 100%;
   }
-
   .main .main--why .why--container .container--text .text--desc {
     width: 100%;
   }
@@ -738,6 +765,9 @@ a {
   }
 }
 @media screen and (max-width: 1024px) {
+  .check + .check {
+    margin-left: 270px;
+  }
   .header--container .container--data .data--search {
     width: 67%;
   }
@@ -758,23 +788,12 @@ a {
   .check + .check {
     margin-left: 0;
   }
-
   .check {
     margin-bottom: 59px;
   }
-
   .header--container .container--data .data--search {
     width: 100%;
   }
-
-  .navigation--container .container--wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .navigation--container .container--wrapper .wrapper--logo {
-    margin-bottom: 32px;
-  }
-
   .main--why .why--container {
     max-width: 720px;
     display: flex;
@@ -805,21 +824,6 @@ a {
   }
   .main--why .why--container .container--text .text--desc {
     text-align: center;
-  }
-  .main--steps .steps--line {
-    display: none;
-  }
-  .main--steps .steps--container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .main--steps .steps--container .container--svg svg {
-    margin-bottom: 4px;
-  }
-  .main--steps .steps--container .container--svg .svg--img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .main--booknow .booknow--container {
     padding: 120px 0;
@@ -852,7 +856,6 @@ a {
   .header--container .container--data .data--search {
     max-width: 540px;
   }
-
   .navigation--container .container--wrapper .wrapper--nav {
     display: none;
   }
