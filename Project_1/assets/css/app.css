@@ -219,7 +219,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 .main--steps .steps--line {
   position: absolute;
@@ -447,7 +447,9 @@
   position: absolute;
   right: 0;
   top: 0;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
 }
 
 .menu-btn {
@@ -485,7 +487,6 @@
 
 .menubox {
   visibility: hidden;
-  position: relative;
   top: -100%;
   width: 576px;
   margin: 0;
@@ -501,7 +502,6 @@
 .menu--items {
   padding-top: 6px;
   padding-bottom: 20px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -568,12 +568,17 @@
 
 #menu-toggle:checked ~ .menubox {
   visibility: visible;
-  right: 0;
+  top: 0;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 665px) {
   .burger--wrapper {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s linear 0.3s, opacity 300ms;
+  }
+  .nav {
+    display: none;
   }
 }
 .footer {
@@ -689,19 +694,9 @@ a {
   .check + .check {
     margin-left: 0 !important;
   }
-  .main--tourist img {
-    width: 100%;
+  .check {
+    margin-bottom: 59px;
   }
-  .main--tourist .tourist--container .container--content {
-    display: flex;
-    flex-direction: column;
-  }
-  .main--tourist .tourist--container .container--content .content--review {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 850px) {
   .main--steps {
     padding-top: 0;
   }
@@ -720,6 +715,19 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  .main--tourist img {
+    width: 100%;
+  }
+  .main--tourist .tourist--container .container--content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main--tourist .tourist--container .container--content .content--review {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 850px) {
   .navigation--container .container--wrapper {
     display: flex;
     flex-direction: column;
@@ -787,9 +795,6 @@ a {
 @media screen and (max-width: 768px) {
   .check + .check {
     margin-left: 0;
-  }
-  .check {
-    margin-bottom: 59px;
   }
   .header--container .container--data .data--search {
     width: 100%;
