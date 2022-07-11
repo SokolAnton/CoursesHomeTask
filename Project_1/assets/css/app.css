@@ -486,7 +486,7 @@
 .menubox {
   visibility: hidden;
   position: relative;
-  right: -100%;
+  left: -100%;
   width: 576px;
   margin: 0;
   padding: 60px 0;
@@ -568,7 +568,7 @@
 
 #menu-toggle:checked ~ .menubox {
   visibility: visible;
-  right: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 665px) {
