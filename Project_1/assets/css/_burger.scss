@@ -1,10 +1,11 @@
+
+
+
 .burger--wrapper {
   position: absolute;
   right: 0;
   top: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 300ms, opacity 300ms;
+  display: none;
 }
 
 .menu-btn {
@@ -26,7 +27,7 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color:white;
   transition-duration: .25s;
 }
 
@@ -42,7 +43,8 @@
 
 .menubox {
   visibility: hidden;
-  top: -100%;
+  position: relative;
+  right: -100%;
   width: 576px;
   margin: 0;
   padding: 60px 0;
@@ -53,16 +55,15 @@
   align-items: center;
   background-color: #5373FD;
 }
-
-.menu--items {
+.menu--items{
   padding-top: 6px;
   padding-bottom: 20px;
-  display: flex;
+  width: 100%;
+   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
-
 .menu-title {
   font-family: 'Josefin Sans';
   font-style: normal;
@@ -91,13 +92,13 @@
   transition-duration: .25s;
 }
 
-.menu-item {
+.menu-item{
   transition: all .15s ease;
 
 }
 
 .menu-item:hover {
-  background-color: rgb(255 217 217);
+  background-color:rgb(255 217 217);
   color: #5373FD;
 }
 
@@ -126,18 +127,15 @@
 
 #menu-toggle:checked~.menubox {
   visibility: visible;
-
-  top: 0;
+  
+  right: 0;
 }
 
 @media screen and(max-width:665px) {
-  .burger--wrapper {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility .3s linear .3s, opacity 300ms;
+  .burger--wrapper{
+    display: block;
   }
-
-  .nav {
+  .nav{
     display: none;
   }
 }
