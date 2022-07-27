@@ -1,9 +1,35 @@
 body {
   font-family: sans-serif;
   background: linear-gradient(purple, black);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 
 }
+body input{
+  display: none;
+}
+header{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+header label{
+  background-color: #b951ae;
+  padding: 15px;
+  margin: 20px;
+}
+header a{
+  color: white;
+  text-decoration: none;
+}
+#HTML:checked~.MainPart{
+display: none;
+}
+#JS:checked~.SecondPArt{
+  display: none;
+  }
 
 .HTnum {
   padding: 5px 0;
@@ -115,29 +141,28 @@ body {
     flex-direction: column;
   }
 
-  .MainPart {
+  .MainPart,.SecondPArt {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
   }
 }
 
-header {
+footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 20px;
 }
 
-.header-link {
+.footer-link {
   padding: 15px;
   width: 200px;
-  height: 50px;
   background-image: linear-gradient(to left, violet, red);
-
   text-align: center;
 }
 
-.header-link a {
+.footer-link a {
   text-decoration: none;
   color: white;
   font-weight: 700;
